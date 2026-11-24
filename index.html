@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="it-IT" style="--teal: #075c69; color-scheme: light; --safe-area-inset-top: 0px; --safe-area-inset-bottom: 0px; --safe-area-inset-left: 0px; --safe-area-inset-right: 0px;" class="transparentSkybridgeBackground desktopSkybridge light" data-theme="light"><head><style>@layer sandbox-defaults{html,body,#root{margin:0;padding:0}}</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project Navigator · Modello vuoto</title>
+<style>
+:root{--navy:#12283a;--ink:#172d3e;--muted:#50677a;--line:#bccbd4;--bg:#f1f5f7;--white:#fff;--teal:#075c69;--blue:#205c9d;--gold:#9b5800;--red:#a82f35;--ok:#116644;--shadow:0 5px 20px #153b5918}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:14px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2ad28;outline-offset:2px}a{color:var(--blue)}header{background:#122d42;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 23px;position:sticky;top:0;z-index:30;border-bottom:3px solid #168a9e}header .brand{font-size:20px;font-weight:800;letter-spacing:-.5px}header small{display:block;color:#bfe8eb;font-size:11px;font-weight:600;letter-spacing:.06em}header .right{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.pill{border:1px solid #a7d0d8;color:#dcf7f9;border-radius:30px;padding:5px 10px;font-size:12px}.layout{display:grid;grid-template-columns:215px minmax(0,1fr);min-height:calc(100vh - 67px)}aside{background:#e8eef1;border-right:1px solid var(--line);padding:20px 12px}.navbutton{width:100%;display:flex;text-align:left;align-items:center;gap:12px;padding:12px 14px;border:0;background:transparent;border-radius:9px;color:#334c5e;font-weight:700;margin-bottom:6px}.navbutton.active,.navbutton:hover{background:var(--teal);color:#fff}.asidefoot{border-top:1px solid #bac9d0;padding:16px 10px;margin-top:23px;font-size:12px;color:var(--muted)}main{min-width:0;padding:24px clamp(14px,3vw,44px) 70px;max-width:1550px;width:100%;margin:0 auto}.headrow{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:22px;flex-wrap:wrap}h1{margin:0;font-size:clamp(23px,2.8vw,30px);line-height:1.2;letter-spacing:-.6px}h2{font-size:19px;letter-spacing:-.3px;margin:0 0 12px}h3{font-size:15px;margin:0 0 9px}.subtitle,.help{color:var(--muted);font-size:13px}.help{margin:7px 0}.btn{background:#fff;border:1px solid #a3b6c0;border-radius:9px;padding:9px 13px;color:#183648;font-weight:700}.btn:hover{background:#dcecf0}.btn.primary{background:var(--teal);color:#fff;border-color:var(--teal)}.btn.primary:hover{background:#064951}.btn.danger{color:var(--red);border-color:#cf9fa3}.btn.small{padding:5px 9px;font-size:12px}.buttons{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.panel{background:#fff;border:1px solid #c8d5db;border-radius:13px;padding:18px;box-shadow:var(--shadow);margin-bottom:17px;min-width:0}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}.stat{padding:17px;background:white;border:1px solid var(--line);border-radius:12px}.stat b{display:block;color:var(--navy);font-size:26px;line-height:1.2}.stat span{font-size:12px;color:var(--muted);font-weight:600}.twocol{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:16px}.fields{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:12px 0 16px}.field{display:grid;gap:5px;min-width:130px}.field label{font-size:12px;font-weight:700;color:#40596a}.field input,.field select,.field textarea,textarea,.num{border:1px solid #a3b4bf;border-radius:8px;background:#fff;padding:9px 10px;color:#122c3c;max-width:100%}.field input{width:100%}.field textarea{min-width:260px}.tag{font-size:11px;border-radius:5px;background:#ddebf0;color:#17475f;padding:3px 7px;font-weight:800;display:inline-block}.tag.orange{background:#fff0d2;color:#7d4e05}.tag.green{background:#d5efdf;color:#175a37}.tag.red{background:#ffe0e2;color:#922e33}.muted{color:var(--muted)}.list{display:grid;gap:8px}.item{background:#fff;border:1px solid #c6d3dc;border-left:4px solid var(--teal);border-radius:9px;padding:11px 13px;cursor:pointer;text-align:left;width:100%;color:var(--ink)}.item:hover{border-color:#2b7e91;background:#f2fafb}.item small{display:block;color:var(--muted);margin-top:3px}.item b{font-size:14px}.item .meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px}.scroll{max-height:580px;overflow:auto}.tablewrap{overflow:auto;border:1px solid #cbd8df;border-radius:9px}table{width:100%;border-collapse:collapse;font-size:13px;white-space:normal}th{position:sticky;top:0;text-align:left;background:#e5eff3;color:#173f55;font-weight:800;z-index:1}th,td{padding:10px 11px;border-bottom:1px solid #d5e0e6;vertical-align:top}tr:hover td{background:#f6fafc}td.num{text-align:right;font-variant-numeric:tabular-nums;border:none;border-bottom:1px solid #d5e0e6}td button.link{color:#0e5b80;background:none;border:0;padding:0;text-align:left;font-weight:700}.ganttrow{display:grid;grid-template-columns:225px minmax(600px,1fr);border-bottom:1px solid #e1e9ee;min-height:42px}.ganttlabel{padding:8px 10px;font-size:12px;overflow:hidden}.ganttlabel button{border:0;background:transparent;color:#0c5773;font-weight:800;text-align:left;padding:0}.ganttbar{position:relative;display:flex;align-items:center;background:repeating-linear-gradient(90deg,#fff 0,#fff calc(100% / 30 - 1px),#e5edf1 calc(100% / 30 - 1px),#e5edf1 calc(100% / 30));}.bar{height:22px;position:absolute;border-radius:6px;background:#27778b;min-width:8px;box-shadow:0 1px 3px #3457;cursor:pointer;border:0;color:#fff;font-weight:750;font-size:11px;overflow:hidden;white-space:nowrap;text-align:left;padding:3px 7px}.bar.lead{background:#164e8c}.bar.other{background:#82939c}.bar.done{background:#126649}.bar:hover{filter:brightness(1.15)}.timelinehead{display:grid;grid-template-columns:225px minmax(600px,1fr);font-size:11px;font-weight:750;color:#304b5d}.monthheader{display:grid;grid-template-columns:repeat(30,minmax(0,1fr));padding:4px 0}.monthheader span{text-align:center;border-right:1px solid #c6d3da}.ganttouter{overflow:auto}.nowline{position:absolute;height:100%;border-left:2px dashed #af3e3b;pointer-events:none;z-index:2}.drawer{position:fixed;z-index:50;right:0;top:0;height:100vh;overflow-y:auto;width:min(520px,100vw);background:#fff;border-left:2px solid #7c9dad;box-shadow:-8px 0 35px #122f3d55;padding:23px;display:none}.drawer.show{display:block}.shade{display:none;position:fixed;inset:0;background:#1026386b;z-index:49}.shade.show{display:block}.row{display:flex;justify-content:space-between;gap:12px;align-items:center}.divider{border:0;border-top:1px solid #c9d6dd;margin:20px 0}.note{padding:10px;border-left:3px solid var(--teal);background:#f1f7f8;border-radius:6px;margin:7px 0}.warning{border-left:4px solid #b16b1c;background:#fff6e5;padding:12px;border-radius:7px;color:#60441d;margin:12px 0}.good{background:#e3f4e8;padding:12px;border-radius:7px;color:#175b38}.tabbuttons{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 18px}.tabbuttons button[aria-pressed=true]{background:var(--teal);color:#fff;border-color:var(--teal)}#pertViewport{height:min(65vh,640px);min-height:390px;overflow:hidden;background:radial-gradient(#c7d7dc 1px, transparent 1px) 0 0/22px 22px;border:1px solid #aabfc8;border-radius:12px;touch-action:none;cursor:grab;position:relative}#pertViewport:active{cursor:grabbing}#pertSvg{width:100%;height:100%;display:block}#pertSvg .edge{stroke:#7797a8;stroke-width:2;fill:none;opacity:.75}#pertSvg .edge.critical{stroke:#c85047;stroke-width:4;opacity:.9}#pertSvg .node rect{fill:#fff;stroke:#357286;stroke-width:2;rx:9}#pertSvg .node.critical rect{stroke:#bc4439;stroke-width:3.5;fill:#fff8f6}#pertSvg .node text{fill:#153748;pointer-events:none;font-size:13px;font-weight:750}#pertSvg .node{cursor:pointer}.hint{font-size:12px;color:var(--muted)}.summarydots{display:flex;gap:15px;flex-wrap:wrap}.summarydots i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px}.trend{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:9px}.trend .tile{background:#eff7f8;padding:10px;border-radius:8px;border:1px solid #cfdee2}.trend .tile b{display:block;font-size:18px}.progress{height:8px;background:#dfe8ec;border-radius:8px;overflow:hidden}.progress div{height:100%;background:#177b84}.budgetgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.budgetgrid .tile{padding:13px;background:#edf5f7;border:1px solid #c6d7de;border-radius:10px}.budgetgrid .tile strong{font-size:21px;display:block}.budgetgrid .tile small{color:var(--muted)}.footer{color:#64798a;font-size:12px;margin-top:16px}.mobilemenu{display:none}.xbtn{font-weight:900;background:#e3edf1;border:1px solid #a9bdc7;border-radius:8px;padding:5px 11px}@media(max-width:950px){.twocol{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:1fr}.layout aside{display:flex;overflow:auto;gap:5px;position:sticky;top:64px;z-index:28;padding:7px 10px;align-items:center}.navbutton{min-width:max-content;width:auto;margin:0;padding:9px 12px}.asidefoot{display:none}main{padding:18px 13px 55px}.ganttrow,.timelinehead{grid-template-columns:160px minmax(650px,1fr)}}@media(max-width:560px){header{padding:10px 12px}.brand{font-size:17px}header .pill{display:none}.cards{grid-template-columns:repeat(2,1fr)}.panel{padding:12px}.stat{padding:12px}.stat b{font-size:21px}.field{min-width:110px}.buttons .btn{font-size:12px}}
+
+.object-tag{display:inline-flex;padding:2px 7px;border-radius:6px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;font-weight:800;color:#fff;background:#436074;margin-right:6px}.object-tag.wp,.kind-wp{--accent:#12598a}.object-tag.tasks,.kind-tasks{--accent:#047a68}.object-tag.del,.kind-del{--accent:#955c09}.object-tag.ms,.kind-ms{--accent:#8b4b7a}.object-tag.partners,.kind-partners{--accent:#544a9c}.object-tag.researcher,.kind-researcher{--accent:#566b20}.object-tag.wp,.object-tag.tasks,.object-tag.del,.object-tag.ms,.object-tag.partners,.object-tag.researcher{background:var(--accent)}.colored-item{border-left:5px solid var(--accent)!important;text-align:left}.colored-item small{display:block;margin-left:4px}.abstract-box{background:#f0f6f8;border-left:3px solid #267588;padding:10px 13px;border-radius:8px;margin:12px 0}.abstract-box p{white-space:pre-line;overflow-wrap:anywhere}.relations{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:9px;margin:12px 0}.relation-card{border:1px solid var(--line);border-radius:9px;background:#fff;padding:11px}.relation-card h3{margin:0 0 6px}.relation-links{display:flex;flex-wrap:wrap;gap:5px}.xref{border:1px solid #a8c8d2;background:#edf7f9;border-radius:6px;padding:2px 5px}.detail-actions{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0}.compact-row{padding:7px 4px;border-bottom:1px solid #dbe3e7}.timeline-detail{padding:18px 9px}.timeline-track{height:12px;border-radius:12px;background:linear-gradient(90deg,#b8d2df,#19768a);position:relative;margin:12px 4px 17px}.timeline-marker{position:absolute;top:-8px;width:20px;height:20px;transform:translateX(-50%) rotate(45deg);background:#d59a17;border:2px solid #fff;box-shadow:0 0 0 1px #915e06}.timeline-today{position:absolute;top:-10px;width:3px;height:31px;background:#b92d35;z-index:2}.fakefield{padding:9px;border:1px solid var(--line);border-radius:8px;background:#fff;min-width:130px}.total-row{background:#dcecf1;font-weight:800;border-top:2px solid #176d80}.header-logo{height:35px;max-width:105px;object-fit:contain;vertical-align:middle;margin-right:5px}.logo-preview{min-height:70px;display:flex;align-items:center;padding:12px;background:#f4f8fa;border-radius:8px}.logo-preview img{max-height:110px;max-width:240px;object-fit:contain}#objectEditor{border-top:1px solid var(--line);padding-top:12px;margin-top:11px}#objectEditor:empty{display:none}#objectEditor textarea{width:100%;display:block;margin-bottom:9px}#researchPartner{min-width:150px}@media(max-width:700px){.relations{grid-template-columns:1fr}.header-logo{height:27px;max-width:65px}}
+</style><style>html, body, #root {
+      margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;
+      
+    }
+html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:transparent}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.transparentSkybridgeBackground,html.transparentSkybridgeBackground.dark{background-color:transparent}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style></head><body>
+<header><div><div class="brand">✦ <span>OncoAI · Project Navigator</span></div><small>PARTNER ROADMAP · PERT · BUDGET &amp; REPORTING</small></div><div class="right"><span class="pill">● Documento Part B • 30 mesi</span><button class="btn small" id="exportTop">↓ Backup JSON</button></div></header>
+<div class="layout"><aside id="nav"><button class="navbutton" data-view="home">▦ &nbsp; Panoramica</button><button class="navbutton" data-view="roadmap">◫ &nbsp; Partner Roadmap</button><button class="navbutton" data-view="catalog">☷ &nbsp; Esplora progetto</button><button class="navbutton" data-view="pert">◉ &nbsp; PERT interattivo</button><button class="navbutton" data-view="budget">€ &nbsp; Budget e costi</button><button class="navbutton" data-view="entries">✎ &nbsp; Rendicontazione</button><button class="navbutton" data-view="researchers">♧ &nbsp; Ricercatori coinvolti</button><button class="navbutton active" data-view="settings">⚙ &nbsp; Dati &amp; backup</button><div class="asidefoot">Fonte: OncoAI Part B revised<br>Ottobre 2026 – Marzo 2029<br><br>Versione locale: i dati inseriti restano su questo browser.</div></aside><main id="main"></main></div>
+<div id="shade" class="shade"></div><section id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Dettagli elemento"></section>
+<script>let DATA={"meta":{"name":"Nuovo progetto","shortName":"Progetto","durationMonths":12,"startDate":"2026-01-01","description":""},"wp":{},"tasks":[],"partners":[],"pert":[],"links":[],"wpLinks":[],"allDeliverables":[],"allMilestones":[]};
+const BASE_PROJECT=JSON.parse(JSON.stringify(DATA));
+const KEY='Navigator_blank_local_v5';const money=x=>new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(Number(x)||0);const num=x=>new Intl.NumberFormat('it-IT',{maximumFractionDigits:2}).format(Number(x)||0);const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));const ix=id=>DATA.tasks.find(x=>x.id===id);const dateAt=m=>{let a=new Date((DATA.meta?.startDate||"2026-10-01")+"T12:00:00");return new Date(a.getFullYear(),a.getMonth()+m-1,1)};const stamp=m=>dateAt(m).toLocaleDateString('it-IT',{month:'short',year:'numeric'});const monthOf=date=>{const d=new Date(date+'T12:00:00'),a=new Date((DATA.meta?.startDate||'2026-10-01')+'T12:00:00');return (d.getFullYear()-a.getFullYear())*12+d.getMonth()-a.getMonth()+1}; let partners=DATA.partners;const partnerName=p=>p.short;
+function initial(){return {project:null,tasks:{},notes:{},attachments:{},budgets:{},rates:{},allocations:{},entries:[],manualLinks:[],settings:{partner:'Tutti',period:'annual',granularity:'quarter',category:'all',countries:[]},pertOffsets:{},researchers:[],objectProgress:{},identity:{logo:null,logoName:'',accent:'#075c69'}}}let state;try{state=Object.assign(initial(),JSON.parse(localStorage.getItem(KEY)||'{}'))}catch{state=initial()}if(state.project&&Array.isArray(state.project.tasks)){DATA=state.project;partners=DATA.partners;}const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){alert('Spazio locale insufficiente. Esporta un backup ed elimina allegati voluminosi.')}};
+let view='home',selectedPartner=state.settings.partner||'IRST',pertLevel='task',pertScale=1,pertX=0,pertY=0,pertDrag=null,pertCritical=new Set();const $=x=>document.querySelector(x);function setView(v){view=v;document.querySelectorAll('.navbutton').forEach(b=>b.classList.toggle('active',b.dataset.view===v));render();scrollTo({top:0,behavior:'instant'})}document.querySelectorAll('.navbutton').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));$('#shade').onclick=closeDrawer;function closeDrawer(){$('#shade').classList.remove('show');$('#drawer').classList.remove('show')}function openDrawer(html){$('#drawer').innerHTML='<div class="row"><b>Dettagli</b><button class="xbtn" id="close">✕</button></div>'+html;$('#shade').classList.add('show');$('#drawer').classList.add('show');$('#close').onclick=closeDrawer}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});const mk=(tag,attrs={})=>{let e=document.createElement(tag);for(let [k,v] of Object.entries(attrs))e.setAttribute(k,v);return e};const btn=(s,fn,cls='btn')=>{const b=mk('button',{class:cls});b.textContent=s;b.onclick=fn;return b};
+function getPM(p,wp){const partner=partners.find(x=>x.short===p||x.name===p);return partner?partner.pms[Number(wp.replace('WP',''))-1]:0}function linkbtn(id,text){return `<button class="link" data-open="${esc(id)}">${esc(text??id)}</button>`}function bindOpen(root=document){root.querySelectorAll('[data-open]').forEach(e=>e.addEventListener('click',()=>openItem(e.dataset.open)))}function getTaskStatus(t){return state.tasks[t.id]||{status:'Da aggiornare',pct:0}}
+function openItem(id){let t=ix(id);if(t){const rec=getTaskStatus(t),notes=state.notes[id]||[],files=state.attachments[id]||[];openDrawer(`<h2>${esc(t.id)} · ${esc(t.title)}</h2><p class="help">${esc(t.wp)} · M${t.from}–M${t.to} (${stamp(t.from)} – ${stamp(t.to)})</p><p>${esc(t.description)}</p><div class="panel"><b>Responsabilità</b><p class="help">Leader: ${esc(t.lead)}<br>Partecipanti: ${esc(t.partners)}</p><div class="fields"><div class="field"><label>Stato</label><select id="taskStatus"><option>Da aggiornare</option><option>Da avviare</option><option>In corso</option><option>In attesa</option><option>Completato</option></select></div><div class="field"><label>Avanzamento (%)</label><input id="taskPct" type="number" min="0" max="100" value="${Number(rec.pct)||0}"></div></div><button id="taskSave" class="btn primary">Salva avanzamento</button></div><h3>Note e aggiornamenti</h3><div class="field"><textarea id="newNote" rows="3" placeholder="Decisioni, attività svolte, criticità…"></textarea></div><button class="btn small" id="addNote">+ Aggiungi nota</button><div id="notesHere">${notes.slice().reverse().map(n=>`<div class="note"><b>${esc(n.date)}</b><div>${esc(n.text)}</div></div>`).join('')}</div><hr class="divider"><h3>Materiali allegati</h3><p class="help">File locali fino a 900 KB ciascuno. Inclusi nel backup JSON; non caricare dati personali o clinici.</p><input type="file" id="fileAdd"><div id="filesHere" class="list">${files.map((f,i)=>`<div class="note"><a href="${f.data}" download="${esc(f.name)}">${esc(f.name)}</a> · <button data-del-file="${i}" class="btn small danger">Elimina</button></div>`).join('')}</div>`);$('#taskStatus').value=rec.status;$('#taskSave').onclick=()=>{let pct=Number($('#taskPct').value);if(!Number.isFinite(pct)||pct<0||pct>100)return alert('Avanzamento da 0 a 100');state.tasks[id]={status:$('#taskStatus').value,pct};save();openItem(id);if(view!=='pert')render()};$('#addNote').onclick=()=>{let text=$('#newNote').value.trim();if(!text)return;state.notes[id]??=[];state.notes[id].push({text,date:new Date().toLocaleString('it-IT')});save();openItem(id)};$('#fileAdd').onchange=async e=>{const f=e.target.files[0];if(!f)return;if(f.size>900000)return alert('Dimensione massima: 900 KB. Usa un riferimento esterno per materiali più grandi.');const reader=new FileReader();reader.onload=()=>{state.attachments[id]??=[];state.attachments[id].push({name:f.name,data:reader.result});save();openItem(id)};reader.readAsDataURL(f)};$('#drawer').querySelectorAll('[data-del-file]').forEach(b=>b.onclick=()=>{state.attachments[id].splice(Number(b.dataset.delFile),1);save();openItem(id)});return}
+const d=DATA.allDeliverables.find(x=>x.id===id),m=DATA.allMilestones.find(x=>x.id===id),w=DATA.wp[id],p=partners.find(x=>x.short===id);if(d)openDrawer(`<h2>${esc(d.id)} · ${esc(d.name)}</h2><p>${esc(d.description)}</p><p><b>WP:</b> ${esc(d.wp)}<br><b>Responsabile:</b> ${esc(d.lead)}<br><b>Scadenza:</b> M${d.month} · ${stamp(d.month)}<br><b>Accesso:</b> ${esc(d.access)}</p>`);else if(m)openDrawer(`<h2>${esc(m.id)} · ${esc(m.name)}</h2><p><b>WP:</b> ${esc(m.wp)}<br><b>Responsabile:</b> ${esc(m.lead)}<br><b>Termine:</b> M${m.month} (${stamp(m.month)})</p><p>${esc(m.evidence)}</p>`);else if(w)openDrawer(`<h2>${esc(w.id)} · ${esc(w.name)}</h2><p><b>Lead:</b> ${esc(w.lead)}<br><b>Periodo:</b> M${w.from}–M${w.to}</p><h3>Task</h3><div class="list">${DATA.tasks.filter(t=>t.wp===id).map(t=>`<div class="item" data-open="${t.id}"><b>${t.id}</b> ${esc(t.title)}</div>`).join('')}</div>`),bindOpen($('#drawer'));else if(p){selectedPartner=p.short;setView('roadmap')}}
+function header(title,subtitle='',extras=''){return `<div class="headrow"><div><h1>${title}</h1><div class="subtitle">${subtitle}</div></div><div class="buttons">${extras}</div></div>`}function render(){document.querySelector('.brand').textContent='✦ '+(DATA.meta?.shortName||'OncoAI')+' · Project Navigator';const main=$('#main');if(view==='home')renderHome(main);if(view==='roadmap')renderRoadmap(main);if(view==='catalog')renderCatalog(main);if(view==='pert')renderPert(main);if(view==='budget')renderBudget(main);if(view==='entries')renderEntries(main);if(view==='settings')renderSettings(main)}
+function renderHome(root){const completed=Object.values(state.tasks).filter(x=>x.status==='Completato').length;const sumPM=partners.reduce((a,p)=>a+p.pms.reduce((x,y)=>x+y,0),0);root.innerHTML=header('Panoramica progetto','Una lettura chiara del consorzio e dei prossimi passaggi','<button class="btn primary" id="goRoadmap">Apri roadmap IRST</button>')+`<div class="cards"><div class="stat"><b>9</b><span>Work Package</span></div><div class="stat"><b>38</b><span>Task documentati</span></div><div class="stat"><b>30</b><span>Deliverable</span></div><div class="stat"><b>11</b><span>Partner</span></div></div><div class="twocol"><section class="panel"><h2>La tua vista operativa</h2><p>La roadmap è centrata su <b>IRST</b>, leader del WP8 e coinvolto nella preparazione dei dati e nell'etica del WP2. Puoi selezionare qualsiasi altro partner.</p><div class="buttons"><button class="btn primary" id="goR2">Roadmap partner →</button><button class="btn" id="goB">Controllo economico →</button><button class="btn" id="goP">PERT navigabile →</button></div><hr class="divider"><h3>Risultati già registrati nell'app</h3><div class="trend"><div class="tile"><b>${completed}</b>Task completati</div><div class="tile"><b>${Object.keys(state.notes).reduce((n,k)=>n+state.notes[k].length,0)}</b>Note inserite</div><div class="tile"><b>${state.entries.length}</b>Movimenti economici</div></div></section><section class="panel"><h2>Scadenze principali</h2><div class="list">${[12,18,20,22,27,30].map(m=>{let ds=DATA.allDeliverables.filter(d=>d.month===m);return `<div class="item" data-open="${ds[0]?.id||'WP8'}"><b>M${m} · ${stamp(m)}</b><small>${ds.length} deliverable previste</small></div>`}).join('')}</div></section></div><section class="panel"><h2>Qualità dei dati economici</h2><div class="warning"><b>Controllo di quadratura da verificare</b><br>La Part B dichiara 218,8 mesi-persona complessivi; la somma delle allocazioni elementari dà ${num(sumPM)}. Il sistema non modifica automaticamente questi valori. Gli importi in euro, se non definiti, restano non valorizzati.</div><p class="help">L'app funziona offline e non sincronizza i partner. Per uso condiviso servono autenticazione, database e tracciamento delle modifiche.</p></section>`;$('#goRoadmap').onclick=$('#goR2').onclick=()=>{selectedPartner='IRST';setView('roadmap')};$('#goB').onclick=()=>setView('budget');$('#goP').onclick=()=>setView('pert');bindOpen(root)}
+function pselect(){return `<div class="field"><label>Partner</label><select id="partnerSel">${partners.map(p=>`<option value="${esc(p.short)}" ${p.short===selectedPartner?'selected':''}>${esc(p.name)}</option>`).join('')}</select></div>`}function isInPartner(t,p){if(p==='IRST')return t.irstRole!=='other';return t.lead.toLowerCase().includes(p.toLowerCase())||t.partners.toLowerCase().includes(p.toLowerCase())||t.partners.toLowerCase().includes('all')}function partnerRole(t,p){return t.lead.toLowerCase().includes(p.toLowerCase())?'lead':'partner'}function gantt(tasks){let now=monthOf(new Date().toISOString().slice(0,10));return `<div class="ganttouter"><div style="min-width:810px"><div class="timelinehead"><div class="ganttlabel">Task e responsabilità</div><div class="monthheader">${Array.from({length:30},(_,i)=>`<span title="${stamp(i+1)}">${i+1}</span>`).join('')}</div></div>${tasks.map(t=>{let status=getTaskStatus(t),lead=partnerRole(t,selectedPartner)==='lead';return `<div class="ganttrow"><div class="ganttlabel">${linkbtn(t.id)} <span class="muted" title="${esc(t.title)}">${esc(t.title.length>27?t.title.slice(0,26)+'…':t.title)}</span></div><div class="ganttbar">${now>=1&&now<=30?`<div class="nowline" style="left:${((now-.5)/30)*100}%"></div>`:''}<button class="bar ${lead?'lead':''} ${status.status==='Completato'?'done':''}" style="left:${(t.from-1)/30*100}%;width:${(t.to-t.from+1)/30*100}%" data-open="${t.id}" title="${esc(t.title)} — M${t.from}–M${t.to}">${esc(t.id)} · ${Number(status.pct)||0}%</button></div></div>`}).join('')}</div></div>`}
+function renderRoadmap(root){const pp=partners.find(p=>p.short===selectedPartner)||partners[4];let tasks=DATA.tasks.filter(t=>isInPartner(t,selectedPartner));let d=DATA.allDeliverables.filter(x=>x.lead.toLowerCase().includes(selectedPartner.toLowerCase()));let pm=pp.pms.reduce((a,b)=>a+b,0);root.innerHTML=header('Partner Roadmap','La prospettiva di chi lavora al progetto, dal primo all’ultimo mese')+`<div class="fields">${pselect()}<div class="field"><label>Dettagli</label><select id="roadFilter"><option value="all">Tutte le attività</option><option value="lead">Solo responsabilità dirette</option><option value="partner">Solo collaborazioni</option></select></div></div><div class="cards"><div class="stat"><b>${num(pm)}</b><span>Mesi-persona (Part B)</span></div><div class="stat"><b>${tasks.length}</b><span>Task collegati</span></div><div class="stat"><b>${d.length}</b><span>Deliverable guidate</span></div><div class="stat"><b>${tasks.filter(t=>getTaskStatus(t).status==='Completato').length}</b><span>Task completati (locali)</span></div></div><section class="panel"><div class="row"><h2>Gantt partner · M1–M30</h2><div class="summarydots"><span><i style="background:#164e8c"></i>Lead</span><span><i style="background:#27778b"></i>Contributo</span><span><i style="background:#126649"></i>Completato</span></div></div><p class="help">La linea rossa tratteggiata indica il mese corrente. Clic su una barra per aggiornare stato, note e allegati; il grafico scorre orizzontalmente.</p><div id="ganttHere">${gantt(tasks)}</div></section><div class="twocol"><section class="panel"><h2>Deliverable sotto responsabilità</h2><div class="list">${d.length?d.map(x=>`<button class="item" data-open="${x.id}"><b>${x.id} · ${esc(x.name)}</b><small>${x.wp} · M${x.month} · ${stamp(x.month)}</small></button>`).join(''):'<p class="muted">Nessuna deliverable assegnata direttamente nel documento.</p>'}</div></section><section class="panel"><h2>Handoff e collaborazioni</h2><p class="help">Relazioni operative suggerite, non una matrice formale di dipendenze approvata.</p><div class="list">${tasks.filter(t=>t.partners&&t.partners!=='all').slice(0,9).map(t=>`<button class="item" data-open="${t.id}"><b>${t.id} · ${esc(t.title)}</b><small>Lead: ${esc(t.lead)}<br>Coinvolti: ${esc(t.partners)}</small></button>`).join('')}</div></section></div>`;$('#partnerSel').onchange=e=>{selectedPartner=e.target.value;state.settings.partner=selectedPartner;save();render()};$('#roadFilter').onchange=e=>{$('#ganttHere').innerHTML=gantt(tasks.filter(t=>e.target.value==='all'||partnerRole(t,selectedPartner)===e.target.value));bindOpen($('#ganttHere'))};bindOpen(root)}
+function renderCatalog(root){root.innerHTML=header('Esplora il progetto','WP, task, deliverable, partner e milestone, tutti consultabili')+`<div class="panel"><div class="fields"><div class="field" style="flex:2;min-width:210px"><label>Ricerca libera</label><input id="search" placeholder="Es. T8.2, governance, FHIR, IRST…"></div><div class="field"><label>Categoria</label><select id="cat"><option value="tasks">Task</option><option value="wp">Work Package</option><option value="del">Deliverable</option><option value="partners">Partner</option><option value="ms">Milestone</option></select></div><div class="field"><label>WP</label><select id="wpFilter"><option value="">Tutti</option>${Object.keys(DATA.wp).map(w=>`<option>${w}</option>`).join('')}</select></div></div><div id="results" class="list"></div></div>`;const draw=()=>{let q=$('#search').value.toLowerCase(),wp=$('#wpFilter').value,cat=$('#cat').value;let arr=cat==='tasks'?DATA.tasks:cat==='wp'?Object.values(DATA.wp):cat==='del'?DATA.allDeliverables:cat==='partners'?partners:DATA.allMilestones;arr=arr.filter(x=>(!wp||x.wp===wp||x.id===wp||(cat==='partners'&&x.pms[Number(wp.slice(2))-1]>0))&&JSON.stringify(x).toLowerCase().includes(q));$('#results').innerHTML=arr.length?arr.map(x=>`<button class="item" data-open="${esc(x.id||x.short)}"><b>${esc(x.id||x.short)} · ${esc(x.title||x.name)}</b><small>${esc(x.wp||x.lead||'Partner')} ${x.from?' · M'+x.from+'–M'+x.to:''}${x.month?' · M'+x.month:''}</small></button>`).join(''):'<p class="muted">Nessun risultato con questi filtri.</p>';bindOpen($('#results'))};['search','cat','wpFilter'].forEach(id=>$('#'+id).addEventListener(id==='search'?'input':'change',draw));draw()}
+// PERT graph is an illustrative dependence network, not the grant's formal critical-path baseline.
+function pertModel(){if(pertLevel==='wp'){let nodes=Object.values(DATA.wp).map((x,i)=>({id:x.id,title:x.name,from:x.from,to:x.to,wp:x.id,col:i%3,row:Math.floor(i/3)}));return {nodes,edges:DATA.wpLinks||[['WP2','WP3'],['WP2','WP5'],['WP3','WP5'],['WP4','WP6'],['WP5','WP6'],['WP5','WP8'],['WP6','WP8'],['WP7','WP8'],['WP8','WP9']].map(([from,to])=>({from,to,type:'FS',lag:0,origin:'modelled'}))}}return {nodes:DATA.pert.map(x=>({...x})),edges:DATA.links.slice()}}
+function normalizedEdge(e){return {...e,type:['FS','SS','FF','SF'].includes(e.type)?e.type:'FS',lag:Number(e.lag)||0}}
+function duration(n){return Math.max(1,Number(n.to)-Number(n.from)+1)}
+function edgeWeight(e,from,to){const lag=Number(e.lag)||0;switch(e.type){case 'SS':return lag;case 'FF':return duration(from)-duration(to)+lag;case 'SF':return -duration(to)+lag;default:return duration(from)+lag}}
+function criticalAnalysis(nodes,rawEdges){const edges=rawEdges.map(normalizedEdge),by=Object.fromEntries(nodes.map(n=>[n.id,n])),incoming=Object.fromEntries(nodes.map(n=>[n.id,[]])),outgoing=Object.fromEntries(nodes.map(n=>[n.id,[]])),indeg=Object.fromEntries(nodes.map(n=>[n.id,0]));for(const e of edges){if(!by[e.from]||!by[e.to])continue;incoming[e.to].push(e);outgoing[e.from].push(e);indeg[e.to]++}let q=nodes.filter(n=>indeg[n.id]===0).map(n=>n.id),order=[];while(q.length){const id=q.shift();order.push(id);for(const e of outgoing[id])if(--indeg[e.to]===0)q.push(e.to)}if(order.length!==nodes.length)return {error:'Il reticolo contiene una dipendenza ciclica: impossibile calcolare il cammino critico.',slack:{},project:0};const ES={},LS={};for(const id of order){ES[id]=Math.max(0,...incoming[id].map(e=>ES[e.from]+edgeWeight(e,by[e.from],by[id])))}const project=Math.max(0,...nodes.map(n=>ES[n.id]+duration(n)));for(const id of order.slice().reverse()){LS[id]=outgoing[id].length?Math.min(...outgoing[id].map(e=>LS[e.to]-edgeWeight(e,by[id],by[e.to]))):project-duration(by[id])}const slack=Object.fromEntries(nodes.map(n=>[n.id,Math.max(0,Math.round((LS[n.id]-ES[n.id])*100)/100)]));return {slack,project,ES,LS}}
+function checkProject(p){if(!p||!p.meta||!p.meta.name||!p.wp||!Array.isArray(p.tasks)||!Array.isArray(p.partners)||!Array.isArray(p.pert)||!Array.isArray(p.links)||!Array.isArray(p.allDeliverables)||!Array.isArray(p.allMilestones))throw Error('Struttura progetto incompleta');const ids=new Set(p.pert.map(x=>x.id));if(ids.size!==p.pert.length)throw Error('ID dei nodi PERT duplicati');for(const n of p.pert)if(!Number.isFinite(+n.from)||!Number.isFinite(+n.to)||+n.to<+n.from)throw Error('Durata non valida: '+n.id);for(const e of p.links){if(!ids.has(e.from)||!ids.has(e.to)||e.from===e.to)throw Error('Collegamento non valido: '+e.from+' → '+e.to);if(!['FS','SS','FF','SF'].includes(e.type||'FS'))throw Error('Tipo non valido: '+e.type);if(!Number.isFinite(Number(e.lag||0)))throw Error('Lag non valido')}let a=criticalAnalysis(p.pert,p.links);if(a.error)throw Error(a.error);if(p.wpLinks){const w=Object.values(p.wp);const wid=new Set(w.map(x=>x.id));for(const e of p.wpLinks){if(!wid.has(e.from)||!wid.has(e.to)||e.from===e.to)throw Error('Collegamento WP non valido');}const b=criticalAnalysis(w,p.wpLinks);if(b.error)throw Error(b.error)}return true}
+function setProject(next){checkProject(next);DATA=next;partners=DATA.partners;state.project=JSON.parse(JSON.stringify(DATA));save()}
+function modifyProject(fn){let next=JSON.parse(JSON.stringify(DATA));fn(next);setProject(next);render()}
+function pertLayout(nodes){const sorted=[...nodes].sort((a,b)=>a.from-b.from||a.id.localeCompare(b.id));const groups={};sorted.forEach(n=>{let group=pertLevel==='wp'?Math.floor((n.from-1)/10):Math.floor((n.from-1)/5);(groups[group]??=[]).push(n)});const maxRows=Math.max(...Object.values(groups).map(a=>a.length),1);let coords={};Object.keys(groups).sort((a,b)=>a-b).forEach((key,ci)=>groups[key].forEach((n,ri)=>coords[n.id]={x:80+ci*300,y:70+ri*105}));let ncol=Object.keys(groups).length;return {coords,w:Math.max(1050,ncol*300+160),h:Math.max(550,maxRows*105+100)}}
+function renderPert(root){const {nodes,edges}=pertModel(),analysis=criticalAnalysis(nodes,edges),critical=nodes.filter(n=>analysis.slack[n.id]===0).map(n=>n.id);pertCritical=new Set(critical);root.innerHTML=header('PERT · esplorazione interattiva','Le dipendenze sono ricostruite per analisi esplorativa, non ufficiali')+`<section class="panel"><div class="row" style="flex-wrap:wrap"><div class="tabbuttons"><button class="btn small" data-level="wp" aria-pressed="${pertLevel==='wp'}">Solo WP</button><button class="btn small" data-level="task" aria-pressed="${pertLevel==='task'}">Task e dipendenze</button></div><div class="buttons"><button class="btn small" id="zoomIn">＋ Zoom</button><button class="btn small" id="zoomOut">－ Zoom</button><button class="btn small" id="fit">Adatta</button><button class="btn small" id="resetPositions">Ripristina nodi</button></div></div><p class="hint">Rotella per zoom • trascina lo sfondo per spostare • trascina un nodo per riposizionarlo • clic sul nodo per i dettagli. Le informazioni si aprono fuori dal grafico, senza sovrapporsi.</p><div id="pertViewport"><svg id="pertSvg" aria-label="Diagramma interattivo delle dipendenze"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#678b9e" stroke-width="1.4"/></marker></defs><g id="pertTransform"></g></svg></div><div class="row" style="margin-top:11px;flex-wrap:wrap"><p class="hint">Bordo rosso: attività con float zero nella rete ipotizzata. La durata totale calcolata è indicativa e non equivale ai 30 mesi del progetto.</p><div class="buttons"><button class="btn small" id="pertReset">Centra vista</button></div></div></section><section class="panel"><h2>Modifica il reticolo PERT</h2><p class="help">Crea, modifica o rimuovi vincoli: FS fine→inizio, SS inizio→inizio, FF fine→fine, SF inizio→fine. Il lag è espresso in mesi (negativo = anticipo). I collegamenti iniziali sono ipotesi di lavoro.</p><div class="fields"><div class="field"><label>Predecessore</label><select id="edgeFrom">${nodes.map(n=>`<option value="${esc(n.id)}">${esc(n.id)} · ${esc(n.title.slice(0,37))}</option>`).join('')}</select></div><div class="field"><label>Successore</label><select id="edgeTo">${nodes.map(n=>`<option value="${esc(n.id)}">${esc(n.id)} · ${esc(n.title.slice(0,37))}</option>`).join('')}</select></div><div class="field"><label>Tipo</label><select id="edgeType"><option value="FS">FS · Fine-Inizio</option><option value="SS">SS · Inizio-Inizio</option><option value="FF">FF · Fine-Fine</option><option value="SF">SF · Inizio-Fine</option></select></div><div class="field"><label>Lag (mesi)</label><input id="edgeLag" type="number" step="1" value="0"></div></div><div class="buttons"><button class="btn primary" id="edgeSave">+ Aggiungi collegamento</button><button class="btn" id="editNodeDates">Modifica attività / durata</button></div><div class="tablewrap" style="max-height:240px;overflow:auto;margin-top:12px"><table><thead><tr><th>Predecessore</th><th>Successore</th><th>Vincolo</th><th>Lag</th><th>Origine</th><th>Azioni</th></tr></thead><tbody>${edges.map((e,i)=>`<tr><td>${esc(e.from)}</td><td>${esc(e.to)}</td><td>${esc(e.type||'FS')}</td><td>${Number(e.lag)||0}</td><td>${esc(e.origin||'modello')}</td><td><button class="btn small" data-edit-edge="${i}">Modifica</button> <button class="btn small danger" data-remove-edge="${i}">Rimuovi</button></td></tr>`).join('')}</tbody></table></div></section><section class="panel"><h2>Dipendenze e margine di flessibilità</h2>${analysis.error?`<div class="warning">${esc(analysis.error)}</div>`:''}<p class="help">Calcolo CPM illustrativo su durate e relazioni modellate: i task possono sovrapporsi nella pianificazione ufficiale, quindi non usare questi float per rendicontazione o decisioni vincolanti.</p><div class="tablewrap"><table><thead><tr><th>Elemento</th><th>Periodo Part B</th><th>Predecessori ipotizzati</th><th>Float logico stimato</th></tr></thead><tbody>${nodes.map(n=>`<tr><td>${linkbtn(n.id,n.id+' · '+n.title.slice(0,37))}</td><td>M${n.from}–M${n.to}</td><td>${edges.filter(e=>e.to===n.id).map(e=>esc(e.from+' '+(e.type||'FS')+(Number(e.lag)?' '+(e.lag>0?'+':'')+e.lag:'')+'m')).join(', ')||'—'}</td><td>${!analysis.error&&analysis.slack[n.id]===0?'<span class="tag red">Critico nella simulazione</span>':num(analysis.slack[n.id])+' mesi logici'}</td></tr>`).join('')}</tbody></table></div></section>`;
+const layout=pertLayout(nodes),coords=layout.coords,store=state.pertOffsets;nodes.forEach(n=>{let off=store[pertLevel+':'+n.id]||{x:0,y:0};coords[n.id].x+=off.x;coords[n.id].y+=off.y});const g=$('#pertTransform'),svg=$('#pertSvg'),vp=$('#pertViewport');let activeNode=null,moved=false;const redraw=()=>{g.setAttribute('transform',`translate(${pertX} ${pertY}) scale(${pertScale})`);let paths=edges.filter(e=>coords[e.from]&&coords[e.to]).map(e=>{let a=coords[e.from],b=coords[e.to];let x1=a.x+210,y1=a.y+28,x2=b.x,y2=b.y+28;let crit=!analysis.error&&pertCritical.has(e.from)&&pertCritical.has(e.to);return `<path class="edge ${crit?'critical':''}" d="M${x1},${y1} C${x1+58},${y1} ${x2-58},${y2} ${x2},${y2}" marker-end="url(#arrow)"/>`}).join('');let cards=nodes.map(n=>{let p=coords[n.id],t=esc(n.title.length>28?n.title.slice(0,27)+'…':n.title);return `<g class="node ${pertCritical.has(n.id)?'critical':''}" data-node="${n.id}" transform="translate(${p.x},${p.y})"><rect width="210" height="57"></rect><text x="11" y="22">${esc(n.id)} · M${n.from}–M${n.to}</text><text x="11" y="43" style="font-size:11px;font-weight:500">${t}</text></g>`}).join('');g.innerHTML=paths+cards;g.querySelectorAll('[data-node]').forEach(el=>el.addEventListener('pointerdown',e=>{e.stopPropagation();activeNode=el.dataset.node;pertDrag={x:e.clientX,y:e.clientY,px:coords[activeNode].x,py:coords[activeNode].y};moved=false;vp.setPointerCapture(e.pointerId)}))};function fit(){pertScale=Math.min(1.05,(vp.clientWidth-40)/layout.w,(vp.clientHeight-24)/layout.h);pertScale=Math.max(.18,pertScale);pertX=12;pertY=10;redraw()}fit();vp.addEventListener('wheel',e=>{e.preventDefault();const bounds=vp.getBoundingClientRect(),cx=e.clientX-bounds.left,cy=e.clientY-bounds.top,factor=e.deltaY<0?1.14:.87,next=Math.min(3.8,Math.max(.17,pertScale*factor));pertX=cx-(cx-pertX)*next/pertScale;pertY=cy-(cy-pertY)*next/pertScale;pertScale=next;redraw()},{passive:false});vp.addEventListener('pointerdown',e=>{if(activeNode)return;pertDrag={x:e.clientX,y:e.clientY,px:pertX,py:pertY};moved=false;vp.setPointerCapture(e.pointerId)});vp.addEventListener('pointermove',e=>{if(!pertDrag)return;let dx=e.clientX-pertDrag.x,dy=e.clientY-pertDrag.y;if(Math.abs(dx)+Math.abs(dy)>4)moved=true;if(activeNode){coords[activeNode].x=pertDrag.px+dx/pertScale;coords[activeNode].y=pertDrag.py+dy/pertScale}else{pertX=pertDrag.px+dx;pertY=pertDrag.py+dy}redraw()});vp.addEventListener('pointerup',e=>{if(activeNode){let id=activeNode;if(moved){const base=pertLayout(nodes).coords[id];store[pertLevel+':'+id]={x:coords[id].x-base.x,y:coords[id].y-base.y};save()}else openItem(id)}pertDrag=null;activeNode=null});$('#zoomIn').onclick=()=>{pertScale=Math.min(3.8,pertScale*1.3);redraw()};$('#zoomOut').onclick=()=>{pertScale=Math.max(.17,pertScale/1.3);redraw()};$('#fit').onclick=$('#pertReset').onclick=fit;$('#resetPositions').onclick=()=>{state.pertOffsets={};save();render()};root.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{pertLevel=b.dataset.level;pertX=0;pertY=0;pertScale=1;render()});bindOpen(root);
+let editIndex=null;const getForm=()=>({from:$('#edgeFrom').value,to:$('#edgeTo').value,type:$('#edgeType').value,lag:Number($('#edgeLag').value),origin:'user'});$('#edgeSave').onclick=()=>{try{const e=getForm();modifyProject(p=>{let key=pertLevel==='wp'?'wpLinks':'links';if(!p[key])p[key]=pertModel().edges.map(normalizedEdge);if(editIndex!==null)p[key].splice(editIndex,1);p[key].push(e)});editIndex=null}catch(err){alert('Collegamento non salvato: '+err.message)}};
+root.querySelectorAll('[data-edit-edge]').forEach(b=>b.onclick=()=>{editIndex=+b.dataset.editEdge;const e=edges[editIndex];$('#edgeFrom').value=e.from;$('#edgeTo').value=e.to;$('#edgeType').value=e.type||'FS';$('#edgeLag').value=e.lag||0;$('#edgeSave').textContent='Salva modifica collegamento';$('#edgeSave').scrollIntoView({block:'nearest'})});
+root.querySelectorAll('[data-remove-edge]').forEach(b=>b.onclick=()=>{if(!confirm('Rimuovere questa dipendenza?'))return;try{modifyProject(p=>{let key=pertLevel==='wp'?'wpLinks':'links';if(!p[key])p[key]=pertModel().edges.map(normalizedEdge);p[key].splice(+b.dataset.removeEdge,1)})}catch(err){alert(err.message)}});
+$('#editNodeDates').onclick=()=>{openDrawer(`<h2>Modifica attività PERT</h2><p class="help">Aggiorna le finestre temporali. Le modifiche sono incluse nell'esportazione completa.</p><div class="field"><label>Attività / WP</label><select id="nodePick">${nodes.map(n=>`<option value="${esc(n.id)}">${esc(n.id)} · ${esc(n.title)}</option>`).join('')}</select></div><div class="fields"><div class="field"><label>Da mese</label><input id="nodeFrom" type="number" min="1" max="30"></div><div class="field"><label>A mese</label><input id="nodeTo" type="number" min="1" max="30"></div></div><button class="btn primary" id="nodeSave">Salva durata</button>`);let setFields=()=>{let n=nodes.find(n=>n.id===$('#nodePick').value);$('#nodeFrom').value=n.from;$('#nodeTo').value=n.to};$('#nodePick').onchange=setFields;setFields();$('#nodeSave').onclick=()=>{let id=$('#nodePick').value,a=+$('#nodeFrom').value,b=+$('#nodeTo').value;if(!Number.isInteger(a)||!Number.isInteger(b)||a<1||b>30||b<a)return alert('Mesi non validi (da 1 a 30).');try{modifyProject(p=>{if(id.startsWith('WP')){p.wp[id].from=a;p.wp[id].to=b}else{let n=p.tasks.find(n=>n.id===id),k=p.pert.find(n=>n.id===id);if(n){n.from=a;n.to=b}if(k){k.from=a;k.to=b}let i=p.irst.find(n=>n.id===id);if(i){i.from=a;i.to=b}}});closeDrawer()}catch(err){alert(err.message)}}};}
+function makePeriods(mode,granularity){let out=[];if(mode==='annual'){for(let y=2026;y<=2029;y++){let start=y===2026?1:((y-2026)*12-8),end=y===2029?30:((y-2026)*12+3);out.push({key:String(y),name:String(y),from:Math.max(1,start),to:Math.min(30,end)})}return out}let size=granularity==='semester'?6:3;for(let m=1;m<=30;m+=size){let n=Math.floor((m-1)/size)+1;out.push({key:(granularity==='semester'?'S':'Q')+n,name:(granularity==='semester'?'Semestre ':'Trimestre ')+n+' · M'+m+'–M'+Math.min(30,m+size-1),from:m,to:Math.min(30,m+size-1)})}return out}
+function allocatePM(p,wp,month){let total=getPM(p,wp),obj=state.allocations[p+'|'+wp];if(obj&&Object.keys(obj).length){return Number(obj[month]||0)}let w=DATA.wp[wp];return month>=w.from&&month<=w.to?total/(w.to-w.from+1):0}function budgetFor(p,wp){return Number(state.budgets[p+'|'+wp]||0)}function pmForPeriod(p,period){return Object.keys(DATA.wp).reduce((sum,w)=>sum+Array.from({length:period.to-period.from+1},(_,i)=>allocatePM(p,w,period.from+i)).reduce((a,b)=>a+b,0),0)}function budgetForPeriod(p,period){let total=0;for(let w of Object.keys(DATA.wp)){let months=Array.from({length:30},(_,i)=>allocatePM(p,w,i+1));let sum=months.reduce((a,b)=>a+b,0);if(sum>0)total+=budgetFor(p,w)*months.slice(period.from-1,period.to).reduce((a,b)=>a+b,0)/sum}return total}function spendForPeriod(p,period){return state.entries.filter(e=>e.partner===p&&monthOf(e.date)>=period.from&&monthOf(e.date)<=period.to).reduce((s,e)=>s+Number(e.amount),0)}function sumEntries(p){return state.entries.filter(e=>e.partner===p).reduce((a,e)=>a+Number(e.amount),0)}
+function budgetControls(){return `<div class="fields">${pselect()}<div class="field"><label>Prospettiva</label><select id="budgetMode"><option value="annual">Budget istituto · anni solari</option><option value="project">Progetto europeo · periodi</option></select></div><div class="field" id="granBox"><label>Periodo progetto</label><select id="gran"><option value="quarter">Trimestri (M1–M3…)</option><option value="semester">Semestri (M1–M6…)</option></select></div></div>`}
+function renderBudget(root){let pp=partners.find(p=>p.short===selectedPartner)||partners[4],mode=state.settings.period||'annual',gran=state.settings.granularity||'quarter';let periods=makePeriods(mode,gran),officialPM=pp.pms.reduce((a,b)=>a+b,0),planned=Object.keys(DATA.wp).reduce((s,w)=>s+budgetFor(selectedPartner,w),0),spent=sumEntries(selectedPartner);root.innerHTML=header('Budget e distribuzione dei costi','Piano economico modificabile, distinto dalle spese registrate')+budgetControls()+`<div class="cards"><div class="stat"><b>${num(officialPM)}</b><span>PM da Part B</span></div><div class="stat"><b>${money(planned)}</b><span>Budget configurato in app</span></div><div class="stat"><b>${money(spent)}</b><span>Costi inseriti</span></div><div class="stat"><b>${money(planned-spent)}</b><span>Residuo previsionale</span></div></div><section class="panel"><h2>Ripartizione per periodo</h2><p class="help">Nella vista istituto i periodi sono anni solari 2026–2029; nella vista europea si riferiscono ai mesi di progetto da ottobre 2026. Importi calcolati dalle allocazioni temporali dei mesi-persona; quando non configurate, la distribuzione è uniforme entro le finestre dei WP, solo come ipotesi.</p><div class="tablewrap"><table><thead><tr><th>Periodo</th><th>PM previsti</th><th>Budget previsto</th><th>Spese registrate</th><th>Scostamento</th></tr></thead><tbody>${periods.map(t=>{let pm=pmForPeriod(selectedPartner,t),b=budgetForPeriod(selectedPartner,t),cost=spendForPeriod(selectedPartner,t);return `<tr><td><b>${esc(t.name)}</b></td><td>${num(pm)}</td><td>${money(b)}</td><td>${money(cost)}</td><td>${money(b-cost)}</td></tr>`}).join('')}</tbody></table></div></section><div class="twocol"><section class="panel"><h2>Budget per Work Package</h2><p class="help">I valori in euro sono input gestionali: non vengono attribuiti automaticamente alla Part B. Imposta gli importi per WP e premi salva.</p><div class="tablewrap"><table><thead><tr><th>WP</th><th>PM Part B</th><th>Budget €</th></tr></thead><tbody>${Object.keys(DATA.wp).map(w=>`<tr><td><b>${w}</b></td><td>${num(getPM(selectedPartner,w))}</td><td><input aria-label="Budget ${w}" class="num budgetInput" type="number" step="1" min="0" data-wp="${w}" style="width:125px" value="${budgetFor(selectedPartner,w)||''}" placeholder="Non definito"></td></tr>`).join('')}</tbody></table></div><button class="btn primary" id="saveBudgets" style="margin-top:14px">Salva budget WP</button></section><section class="panel"><h2>Distribuzione mensile dei PM</h2><p class="help">Per affinare la previsione, inserisci una distribuzione mensile personalizzata per un WP. La somma deve coincidere con il valore attribuito al partner nella Part B.</p><div class="fields"><div class="field"><label>WP</label><select id="allocWp">${Object.keys(DATA.wp).filter(w=>getPM(selectedPartner,w)>0).map(w=>`<option>${w}</option>`).join('')}</select></div><button class="btn small" id="allocate">Modifica distribuzione</button></div><div class="warning">Le somme vengono verificate automaticamente. I costi effettivi si inseriscono nella sezione Rendicontazione e non modificano il budget programmato.</div></section></div>`;$('#partnerSel').onchange=e=>{selectedPartner=e.target.value;state.settings.partner=selectedPartner;save();render()};$('#budgetMode').value=mode;$('#gran').value=gran;$('#granBox').style.display=mode==='annual'?'none':'';$('#budgetMode').onchange=e=>{state.settings.period=e.target.value;save();render()};$('#gran').onchange=e=>{state.settings.granularity=e.target.value;save();render()};$('#saveBudgets').onclick=()=>{root.querySelectorAll('.budgetInput').forEach(e=>{let val=e.value.trim();if(val==='')delete state.budgets[selectedPartner+'|'+e.dataset.wp];else state.budgets[selectedPartner+'|'+e.dataset.wp]=Math.max(0,Number(val)||0)});save();render()};$('#allocate').onclick=()=>allocationDrawer(selectedPartner,$('#allocWp').value)}
+function allocationDrawer(p,wp){let w=DATA.wp[wp],target=getPM(p,wp),key=p+'|'+wp,allocation=state.allocations[key]||{},months=Array.from({length:w.to-w.from+1},(_,i)=>w.from+i);openDrawer(`<h2>Distribuzione PM · ${esc(p)} / ${wp}</h2><p>Totale dichiarato: <b>${num(target)} mesi-persona</b>. Inserisci il piano mensile; il totale deve coincidere.</p><div class="tablewrap"><table><thead><tr><th>Mese</th><th>PM previsti</th></tr></thead><tbody>${months.map(m=>`<tr><td>M${m} · ${stamp(m)}</td><td><input data-month="${m}" class="num pmInput" type="number" min="0" step="0.01" style="width:115px" value="${allocation[m]??(target/months.length).toFixed(3)}"></td></tr>`).join('')}</tbody></table></div><p id="allocSum"></p><button class="btn primary" id="saveAllocation">Salva distribuzione</button> <button class="btn" id="clearAllocation">Ripristina uniforme</button>`);const calculate=()=>{let s=[...$('#drawer').querySelectorAll('.pmInput')].reduce((a,e)=>a+Number(e.value||0),0);$('#allocSum').textContent=`Totale inserito: ${num(s)} PM · differenza: ${num(s-target)}`;return s};$('#drawer').querySelectorAll('.pmInput').forEach(e=>e.oninput=calculate);calculate();$('#saveAllocation').onclick=()=>{let s=calculate();if(Math.abs(s-target)>.011)return alert('La somma deve coincidere con i '+num(target)+' PM previsti per il WP');state.allocations[key]=Object.fromEntries([...$('#drawer').querySelectorAll('.pmInput')].map(e=>[e.dataset.month,Number(e.value||0)]));save();closeDrawer();render()};$('#clearAllocation').onclick=()=>{delete state.allocations[key];save();closeDrawer();render()}}
+const categories=['Personale','Viaggi e missioni','Attrezzature','Servizi e subcontratti','Altri beni e servizi','Costi indiretti','Altro'];function renderEntries(root){let es=state.entries.filter(e=>e.partner===selectedPartner).sort((a,b)=>b.date.localeCompare(a.date));root.innerHTML=header('Rendicontazione agile','Registro gestionale delle spese: non sostituisce la contabilità aziendale')+`<div class="fields">${pselect()}<button class="btn primary" id="newEntry">＋ Registra costo / PM</button><button class="btn" id="csvEntries">↓ Esporta CSV</button></div><div class="cards"><div class="stat"><b>${es.length}</b><span>Movimenti inseriti</span></div><div class="stat"><b>${money(es.reduce((s,e)=>s+Number(e.amount),0))}</b><span>Costi complessivi</span></div><div class="stat"><b>${num(es.filter(e=>e.category==='Personale').reduce((s,e)=>s+Number(e.pm||0),0))}</b><span>PM personale registrati</span></div><div class="stat"><b>${es.filter(e=>e.category==='Personale').length}</b><span>Registrazioni del personale</span></div></div><section class="panel"><div class="fields"><div class="field"><label>Voce di spesa</label><select id="entryFilter"><option value="all">Tutte</option>${categories.map(c=>`<option>${esc(c)}</option>`).join('')}</select></div><div class="field"><label>Ricerca</label><input id="entrySearch" placeholder="Persona, task, descrizione"></div></div><div class="tablewrap"><table><thead><tr><th>Data</th><th>Categoria</th><th>Persona / descrizione</th><th>WP e task</th><th>PM</th><th>Importo</th><th>Azioni</th></tr></thead><tbody id="entryRows"></tbody></table></div></section><div class="warning"><b>Privacy e rendicontazione</b><br>Registra solo le informazioni gestionali strettamente necessarie, senza dati sanitari. Gli importi e i mesi-persona effettivi inseriti sono dati locali non certificati; verificare i criteri di eleggibilità con l'amministrazione prima della rendicontazione ufficiale.</div>`;$('#partnerSel').onchange=e=>{selectedPartner=e.target.value;save();render()};$('#newEntry').onclick=()=>entryDrawer();$('#csvEntries').onclick=()=>download('OncoAI_movimenti_'+selectedPartner+'.csv',csvOf(es),'text/csv');const draw=()=>{let q=$('#entrySearch').value.toLowerCase(),f=$('#entryFilter').value;let show=es.filter(e=>(f==='all'||e.category===f)&&JSON.stringify(e).toLowerCase().includes(q));$('#entryRows').innerHTML=show.length?show.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.category)}</td><td><b>${esc(e.person||'—')}</b><br><span class="muted">${esc(e.description||'')}</span></td><td>${esc(e.wp||'—')} ${esc(e.task||'')}</td><td>${e.pm?num(e.pm):'—'}</td><td>${money(e.amount)}</td><td><button class="btn small" data-edit="${e.id}">Modifica</button> <button class="btn small danger" data-delete="${e.id}">Elimina</button></td></tr>`).join(''):'<tr><td colspan="7">Nessun movimento registrato per questi filtri.</td></tr>';root.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>entryDrawer(state.entries.find(e=>e.id===b.dataset.edit)));root.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>{if(confirm('Eliminare questa registrazione?')){state.entries=state.entries.filter(e=>e.id!==b.dataset.delete);save();render()}})};$('#entrySearch').oninput=draw;$('#entryFilter').onchange=draw;draw()}
+function entryDrawer(edit=null){let e=edit||{date:new Date().toISOString().slice(0,10),partner:selectedPartner,category:'Personale',wp:'WP8',task:'',person:'',pm:'',amount:'',description:'',ref:''};openDrawer(`<h2>${edit?'Modifica':'Nuova'} registrazione</h2><p class="help">Importo effettivo e PM rendicontabili sono campi distinti. Un costo può essere assegnato a WP e task, a una persona o a un riferimento documentale.</p><div class="fields"><div class="field"><label>Data</label><input id="eDate" type="date" value="${esc(e.date)}"></div><div class="field"><label>Categoria</label><select id="eCategory">${categories.map(c=>`<option ${c===e.category?'selected':''}>${esc(c)}</option>`).join('')}</select></div><div class="field"><label>WP</label><select id="eWp">${Object.keys(DATA.wp).map(w=>`<option ${w===e.wp?'selected':''}>${w}</option>`).join('')}</select></div><div class="field"><label>Task</label><select id="eTask"><option value="">Non specificato</option>${DATA.tasks.map(t=>`<option ${t.id===e.task?'selected':''}>${t.id}</option>`).join('')}</select></div><div class="field" style="flex:1;min-width:200px"><label>Persona / fornitore (facoltativo)</label><input id="ePerson" value="${esc(e.person)}" placeholder="Nome o codice risorsa"></div><div class="field"><label>Mesi-persona</label><input id="ePm" type="number" min="0" step="0.01" value="${esc(e.pm)}"></div><div class="field"><label>Importo (€)</label><input id="eAmount" type="number" min="0" step="0.01" value="${esc(e.amount)}" required></div><div class="field" style="flex:1;min-width:200px"><label>Riferimento amministrativo</label><input id="eRef" value="${esc(e.ref||'')}" placeholder="N. documento / pratica"></div><div class="field" style="width:100%"><label>Descrizione</label><textarea id="eDescription" rows="3" placeholder="Attività svolta o spesa sostenuta">${esc(e.description)}</textarea></div></div><button class="btn primary" id="saveEntry">Salva movimento</button>`);$('#saveEntry').onclick=()=>{let amount=Number($('#eAmount').value),pm=Number($('#ePm').value||0),date=$('#eDate').value;if(!date||monthOf(date)<1||monthOf(date)>30)return alert('Data fuori dai 30 mesi di progetto (ottobre 2026 – marzo 2029).');if(!Number.isFinite(amount)||amount<0||$('#eAmount').value.trim()==='')return alert('Inserisci un importo valido (anche zero).');if(!Number.isFinite(pm)||pm<0)return alert('PM non validi');let item={id:edit?.id||'E'+Date.now()+Math.random().toString(36).slice(2,5),date,partner:selectedPartner,category:$('#eCategory').value,wp:$('#eWp').value,task:$('#eTask').value,person:$('#ePerson').value.trim(),pm,amount,description:$('#eDescription').value.trim(),ref:$('#eRef').value.trim()};if(edit){let i=state.entries.findIndex(x=>x.id===edit.id);state.entries[i]=item}else state.entries.push(item);save();closeDrawer();render()}}
+function csvOf(rows){let keys=['date','partner','category','wp','task','person','pm','amount','ref','description'];return '\ufeff'+[keys.join(';'),...rows.map(r=>keys.map(k=>'"'+String(r[k]??'').replace(/"/g,'""')+'"').join(';'))].join('\r\n')}function download(name,text,type='application/json'){const a=mk('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}function exportBackup(){download('OncoAI_Archivio_Completo_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({schema:'OncoAI-full-v4',exported:new Date().toISOString(),project:DATA,data:{...state,project:null}},null,2))}$('#exportTop').onclick=exportBackup;
+function renderSettings(root){root.innerHTML=header('Archivio completo · progetto e backup','Esporta, modifica o ripristina l’intero modello OncoAI')+`<div class="twocol"><section class="panel"><h2>Archivio completo</h2><p>L'esportazione include nome e metadati, WP, task, partner, deliverable, milestone, matrice PM, reticolo PERT modificato, budget, note, avanzamenti e allegati locali.</p><div class="buttons"><button class="btn primary" id="export">↓ Esporta progetto e dati JSON</button><label class="btn" for="importFile" style="cursor:pointer">↑ Importa archivio JSON</label><input id="importFile" type="file" accept=".json,application/json" style="display:none"></div><p class="help">Importa anche backup v2: lo stato gestionale viene recuperato sul modello corrente. L'archivio v3 sostituisce invece sia il modello sia lo stato. Esporta prima di importare.</p><hr class="divider"><h3>Modifica la struttura del progetto</h3><p class="help">Editor JSON per nomi, WP, task, partner e relazioni. Convalida prima del salvataggio. Conserva gli identificativi se sono già presenti note o spese collegate.</p><button class="btn" id="projectEditor">Apri editor dati progetto</button><hr class="divider"><button class="btn danger" id="clear">Cancella dati locali e ripristina il progetto iniziale</button><hr class="divider"><h3>Parti da zero</h3><p class="help">Elimina tutti gli oggetti del progetto e tutte le registrazioni locali. Il progetto vuoto rimane modificabile e può importare un archivio completo. Scarica inoltre il file HTML vuoto pronto per pubblicazione su GitHub Pages: non contiene il catalogo OncoAI nel codice.</p><div class="buttons"><button class="btn danger" id="emptyProject">Svuota completamente il progetto</button><button class="btn" id="downloadEmptyApp">↓ Scarica app HTML senza dati</button></div></section><section class="panel"><h2>Provenienza e limiti</h2><p><b>Documentato dalla Part B:</b> WP, task, partner, deliverable, milestone, mesi-persona.</p><p><b>Ipotesi modificabili:</b> vincoli PERT e loro durata; la distribuzione iniziale dei PM è una stima.</p><p><b>Registrazioni:</b> stati, note, budget e costi vengono inseriti manualmente.</p><div class="warning">Quadratura Part B: WP1 19,0 PM sommati contro 18,5 dichiarati; partner 219,8 contro totale dichiarato 218,8. Nessuna correzione automatica.</div><p class="help">Funzionamento offline e per singolo utente. I file allegati sono inclusi solo se già conservati nello stato dell'app; controlla la dimensione dell'archivio.</p></section></div>`;
+$('#export').onclick=exportBackup;
+$('#importFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let content=JSON.parse(await f.text());if(['OncoAI-full-v3','OncoAI-full-v4'].includes(content.schema)){checkProject(content.project);if(!content.data||!Array.isArray(content.data.entries))throw Error('Dati gestionali mancanti');if(confirm('Sostituire il progetto e i dati locali con questo archivio?')){state=Object.assign(initial(),content.data);setProject(content.project);selectedPartner=state.settings.partner||'IRST';render()}}else if(content.schema==='OncoAI-local-v2'&&content.data&&Array.isArray(content.data.entries)){if(confirm('Importare il vecchio backup gestionale v2 lasciando invariati WP, task e PERT?')){state=Object.assign(initial(),content.data,{project:DATA});save();selectedPartner=state.settings.partner||'IRST';render()}}else throw Error('Formato non riconosciuto')}catch(err){alert('Importazione non riuscita: '+err.message)}};
+$('#projectEditor').onclick=()=>{openDrawer(`<h2>Editor struttura del progetto</h2><p class="help">Modifica il JSON e salva. Le dipendenze PERT si gestiscono più facilmente dalla vista PERT; qui puoi intervenire su tutti gli elementi.</p><textarea id="projectJson" spellcheck="false" style="width:100%;height:55vh;font:12px/1.4 monospace"></textarea><div class="buttons"><button class="btn primary" id="projectSave">Verifica e salva</button><button class="btn" id="projectCancel">Annulla</button></div>`);$('#projectJson').value=JSON.stringify(DATA,null,2);$('#projectCancel').onclick=closeDrawer;$('#projectSave').onclick=()=>{try{let updated=JSON.parse($('#projectJson').value);setProject(updated);closeDrawer();render();alert('Dati del progetto aggiornati e inclusi nel prossimo backup.')}catch(err){alert('Modifica non valida: '+err.message)}}};
+$('#clear').onclick=()=>{if(confirm('Eliminare tutti i dati locali e ripristinare il progetto iniziale?')){state=initial();DATA=JSON.parse(JSON.stringify(BASE_PROJECT));partners=DATA.partners;state.project=JSON.parse(JSON.stringify(DATA));save();selectedPartner='IRST';render()}};$('#emptyProject').onclick=emptyProjectNow;$('#downloadEmptyApp').onclick=downloadEmptyTemplate;}
+
+/* OncoAI Navigator 4 — componenti aggiuntivi, senza dipendenze esterne */
+const V4_DEFAULT_START='2026-10-01';
+state.researchers ||= [];
+state.objectProgress ||= {};
+state.identity ||= {logo:null, logoName:'', accent:'#075c69'};
+state.settings ||= {};
+state.settings.countries ||= [];
+DATA.meta.startDate ||= V4_DEFAULT_START;
+const projectStart=()=>{let v=DATA.meta.startDate||V4_DEFAULT_START;return /^\d{4}-\d{2}-\d{2}$/.test(v)?v:V4_DEFAULT_START};
+const monthDate=(m)=>{let [y,mo,d]=projectStart().split('-').map(Number);return new Date(y,mo-1+m-1,d)};
+const longDate=(m)=>monthDate(m).toLocaleDateString('it-IT',{month:'long',year:'numeric'});
+const countryOf=p=>p.country||({'AIRI':'Italia','AOU Parma':'Italia','IRCCS AOUBO':'Italia','AUSL-RE':'Italia','IRST':'Italia','AUSL-MO':'Italia','BSC':'Spagna','MOLIT Institute':'Germania','MOLIT Service':'Germania','HHN':'Germania','MUUZA':'Lituania','Muuza':'Lituania'}[p.short]||'Da definire');
+const partnerByName=n=>{let t=String(n||'').toLowerCase().trim();return partners.find(p=>p.short.toLowerCase()===t||p.name.toLowerCase()===t||t.includes(p.short.toLowerCase())&&p.short.length>3)};
+const objBadge=k=>`<span class="object-tag ${k}">${({wp:'WP',tasks:'Task',del:'Deliverable',ms:'Milestone',partners:'Partner',researcher:'Ricercatore'})[k]||k}</span>`;
+const objectKind=(x)=>x.startsWith('WP')?'wp':x.startsWith('T')?'tasks':x.startsWith('D')?'del':x.startsWith('MS')?'ms': 'partners';
+const refs=(ids)=>[...new Set(ids.filter(Boolean))].map(id=>`<span class="xref">${linkbtn(id,id)}</span>`).join(' ')||'<span class="muted">Nessuno</span>';
+const relatedTasks=(id)=>DATA.tasks.filter(t=>t.wp===id);
+const relatedDel=(id)=>DATA.allDeliverables.filter(d=>d.wp===id);
+const relatedMs=(id)=>DATA.allMilestones.filter(m=>String(m.wp).split(/[, ]+/).includes(id));
+const partnerTasks=(p)=>DATA.tasks.filter(t=>isInPartner(t,p));
+function relCard(title,ids){return `<div class="relation-card"><h3>${esc(title)}</h3><div class="relation-links">${refs(ids)}</div></div>`}
+function objToolbar(id,canProgress=true){return `<div class="detail-actions"><button class="btn small" data-action="note">✎ Note</button><button class="btn small" data-action="file">▣ Allegati</button>${canProgress?'<button class="btn small" data-action="progress">◷ Avanzamento</button>':''}<button class="btn small" data-action="cost">€ Rendiconta</button></div><div id="objectEditor"></div>`}
+function genericEditor(id){let target=$('#objectEditor');if(!target)return;return mode=>{if(mode==='note'){target.innerHTML=`<h3>Aggiungi una nota a ${esc(id)}</h3><textarea id="noteV4" rows="3" placeholder="Aggiornamento o commento"></textarea><button class="btn primary" id="noteV4Save">Salva nota</button><div class="list">${(state.notes[id]||[]).slice().reverse().map(n=>`<div class="note"><b>${esc(n.date)}</b> ${esc(n.text)}</div>`).join('')}</div>`;$('#noteV4Save').onclick=()=>{let text=$('#noteV4').value.trim();if(!text)return;state.notes[id] ||= [];state.notes[id].push({text,date:new Date().toLocaleString('it-IT')});save();openItem(id)};}
+if(mode==='file'){target.innerHTML=`<h3>Materiali associati a ${esc(id)}</h3><p class="help">Max 900 KB per file; i file vengono salvati nel backup JSON. Non inserire dati clinici.</p><input type="file" id="attachmentV4"><div class="list">${(state.attachments[id]||[]).map((f,i)=>`<div class="note"><a href="${f.data}" download="${esc(f.name)}">${esc(f.name)}</a> <button class="btn small danger" data-v4del="${i}">Rimuovi</button></div>`).join('')}</div>`;$('#attachmentV4').onchange=async e=>{let f=e.target.files[0];if(!f)return;if(f.size>900000)return alert('Dimensione massima 900 KB');let reader=new FileReader();reader.onload=()=>{state.attachments[id] ||= [];state.attachments[id].push({name:f.name,data:reader.result});save();openItem(id)};reader.readAsDataURL(f)};target.querySelectorAll('[data-v4del]').forEach(b=>b.onclick=()=>{state.attachments[id].splice(+b.dataset.v4del,1);save();openItem(id)});}
+if(mode==='progress'){let rec=state.objectProgress[id]||{status:'Da aggiornare',pct:0};target.innerHTML=`<h3>Avanzamento di ${esc(id)}</h3><div class="fields"><div class="field"><label>Stato</label><select id="opStatus">${['Da aggiornare','Da avviare','In corso','In attesa','Completato'].map(s=>`<option ${s===rec.status?'selected':''}>${s}</option>`).join('')}</select></div><div class="field"><label>Percentuale</label><input type="number" min="0" max="100" id="opPct" value="${rec.pct}"></div></div><button class="btn primary" id="opSave">Salva</button>`;$('#opSave').onclick=()=>{let pct=Number($('#opPct').value);if(pct<0||pct>100||!Number.isFinite(pct))return alert('Valore compreso fra 0 e 100');state.objectProgress[id]={status:$('#opStatus').value,pct};save();openItem(id);};}
+if(mode==='cost'){target.innerHTML=`<h3>Rendicontazione collegata a ${esc(id)}</h3><p class="help">Apri il registro e crea una voce collegata a questo elemento.</p><button class="btn primary" id="goEntryObject">Crea registrazione</button>`;$('#goEntryObject').onclick=()=>{closeDrawer();if(id.startsWith('WP')){state.settings.prefillWP=id}else if(id.startsWith('T')){state.settings.prefillTask=id;state.settings.prefillWP=ix(id)?.wp||'WP8'}else if(partners.some(p=>p.short===id)){selectedPartner=id;state.settings.partner=id}setView('entries');entryDrawer()};}
+};}
+function objectDetail(id){let t=ix(id),d=DATA.allDeliverables.find(x=>x.id===id),m=DATA.allMilestones.find(x=>x.id===id),w=DATA.wp[id],p=partners.find(x=>x.short===id),r=state.researchers.find(x=>x.id===id);let title='',abstract='',info='',links='',progress=true;
+if(t){title=t.id+' · '+t.title;abstract=t.description||'';info=`<p class="help">${esc(t.wp)} · M${t.from}–M${t.to} (${esc(stamp(t.from))} – ${esc(stamp(t.to))})</p><p><b>Lead:</b> ${esc(t.lead)}<br><b>Partecipanti:</b> ${esc(t.partners||'—')}</p>`;let pd=DATA.allDeliverables.filter(x=>x.wp===t.wp&&(x.month>=t.from&&x.month<=t.to));links=relCard('Work Package',[t.wp])+relCard('Partner',partners.filter(q=>isInPartner(t,q.short)).map(q=>q.short))+relCard('Deliverable del WP nel periodo',pd.map(x=>x.id))+relCard('Milestone del WP',relatedMs(t.wp).map(x=>x.id));}
+else if(w){title=w.id+' · '+w.name;abstract=w.description||'';info=`<p><b>WP lead:</b> ${esc(w.lead)}<br><b>Periodo:</b> M${w.from}–M${w.to}</p>`;links=relCard('Task',relatedTasks(id).map(x=>x.id))+relCard('Deliverable',relatedDel(id).map(x=>x.id))+relCard('Milestone',relatedMs(id).map(x=>x.id))+relCard('Partner coinvolti',partners.filter(q=>getPM(q.short,id)>0).map(x=>x.short));}
+else if(d){title=d.id+' · '+d.name;abstract=d.description||'';info=`<p><b>Responsabile:</b> ${esc(d.lead)}<br><b>Scadenza:</b> M${d.month} · ${esc(stamp(d.month))}<br><b>Tipo:</b> ${esc(d.kind||'—')} · <b>Accesso:</b> ${esc(d.access||'—')}</p>`;links=relCard('WP',[d.wp])+relCard('Partner responsabile',partnerByName(d.lead)?[partnerByName(d.lead).short]:[])+relCard('Milestone del periodo',DATA.allMilestones.filter(x=>x.month===d.month).map(x=>x.id))+relCard('Task del WP',relatedTasks(d.wp).map(x=>x.id));}
+else if(m){title=m.id+' · '+m.name;abstract=m.description||m.evidence||'';info=`<p><b>Scadenza:</b> M${m.month} · ${esc(stamp(m.month))}<br><b>Leader:</b> ${esc(m.lead)}<br><b>Evidenza:</b> ${esc(m.evidence||'—')}</p>`;links=relCard('WP',String(m.wp).split(/[, ]+/).filter(x=>DATA.wp[x]))+relCard('Deliverable previste entro il mese',DATA.allDeliverables.filter(x=>x.month===m.month).map(x=>x.id))+relCard('Partner',partnerByName(m.lead)?[partnerByName(m.lead).short]:[]);}
+else if(p){title=p.name;abstract=p.description||'Partner del consorzio OncoAI. Descrizione istituzionale non presente nei dati strutturati: campo personalizzabile.';let ts=partnerTasks(p.short);info=`<p><b>Paese:</b> ${esc(countryOf(p))}<br><b>PM pianificati:</b> ${num(p.pms.reduce((a,b)=>a+b,0))}<br><b>Budget inserito:</b> ${money(Object.keys(DATA.wp).reduce((sum,id)=>sum+budgetFor(p.short,id),0))}<br><b>Costi registrati:</b> ${money(sumEntries(p.short))}</p><h3>Coinvolgimento per WP</h3><div class="list">${Object.keys(DATA.wp).filter(id=>getPM(p.short,id)>0).map(id=>`<div class="compact-row">${linkbtn(id,id+' · '+DATA.wp[id].name)} <span class="tag">${DATA.wp[id].lead===p.short?'Leader':'Participant'}</span> · ${num(getPM(p.short,id))} PM</div>`).join('')}</div>`;links=relCard('Task',ts.map(x=>x.id))+relCard('Deliverable responsabili',DATA.allDeliverables.filter(x=>partnerByName(x.lead)?.short===p.short).map(x=>x.id))+relCard('Milestone',DATA.allMilestones.filter(x=>partnerByName(x.lead)?.short===p.short).map(x=>x.id))+relCard('Ricercatori',state.researchers.filter(x=>x.partner===p.short).map(x=>x.id));}
+else if(r){title=r.first+' '+r.last;abstract='Profilo del ricercatore associato al partner';info=`<p><b>Partner:</b> ${linkbtn(r.partner)}<br><b>Contratto:</b> ${esc(r.contract||'—')}<br><b>Email:</b> ${esc(r.email||'—')}<br><b>ORCID:</b> ${esc(r.orcid||'—')}</p><h3>Storico dei costi mensili</h3><div class="list">${(r.rates||[]).map(x=>`<div class="compact-row">${esc(x.from||'—')} → ${esc(x.to||'in corso')} · ${money(x.amount)}/mese</div>`).join('')}</div>`;links=relCard('Partner',[r.partner]);}
+else if(/^M\d+$/.test(id)){let month=Number(id.slice(1));title=`M${month} · Scadenze di ${longDate(month)}`;abstract='Raggruppamento cronologico: non corrisponde necessariamente a una singola milestone ufficiale.';info=monthTimeline(month);links=relCard('Milestone ufficiali',DATA.allMilestones.filter(x=>x.month===month).map(x=>x.id))+relCard('Deliverable previste nel mese',DATA.allDeliverables.filter(x=>x.month===month).map(x=>x.id));}
+else return;
+let typ=r?'researcher':p?'partners':w?'wp':t?'tasks':d?'del':m?'ms':'ms';openDrawer(`<div class="object-detail"><div>${objBadge(typ)}</div><h2>${esc(title)}</h2>${info}<section class="abstract-box"><h3>Descrizione / abstract</h3><p>${esc(String(abstract).replace(/^\.\s*/,''))||'Descrizione non disponibile nella base dati della proposal.'}</p></section><h3>Collegamenti</h3><div class="relations">${links}</div>${objToolbar(id,progress)}</div>`);bindOpen($('#drawer'));let editor=genericEditor(id);$('#drawer').querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>editor(b.dataset.action));if(view==='pert'&&(t||w)){let box=$('#objectEditor');box.innerHTML=`<h3>Relazioni PERT di ${esc(id)}</h3><button class="btn primary" id="pertEditForNode">Gestisci collegamenti</button><div class="list">${(pertLevel==='wp'?DATA.wpLinks:DATA.links).filter(e=>e.from===id||e.to===id).map(e=>`<div class="compact-row">${linkbtn(e.from)} → ${linkbtn(e.to)} <b>${esc(e.type||'FS')}</b> ${num(e.lag||0)} mesi</div>`).join('')}</div>`;bindOpen(box);$('#pertEditForNode').onclick=()=>{closeDrawer();setView('pert');let from=$('#edgeFrom');if(from){from.value=id;$('#edgeFrom').scrollIntoView({behavior:'smooth',block:'center'})}};}}
+openItem=objectDetail;
+function monthTimeline(month){let today=monthIndexNow(),at=Math.max(0,Math.min(100,((month-.5)/DATA.meta.durationMonths)*100)),now=Math.max(0,Math.min(100,((today-.5)/DATA.meta.durationMonths)*100));return `<div class="timeline-detail"><div class="timeline-track"><span class="timeline-marker" style="left:${at}%" title="M${month}"></span><span class="timeline-today" style="left:${now}%" title="Oggi · M${today}"></span></div><div class="row" style="justify-content:space-between"><small>M1 · ${esc(stamp(1))}</small><small>Programmato M${month} · ${esc(stamp(month))}</small><small>M${DATA.meta.durationMonths}</small></div><p class="help">◆ Scadenza prevista · linea rossa: posizione di oggi (${today<1?'prima dell’avvio':today>DATA.meta.durationMonths?'oltre il termine':'M'+today})</p></div>`}
+function monthIndexNow(){let a=new Date(projectStart()+'T12:00:00'),n=new Date();return (n.getFullYear()-a.getFullYear())*12+n.getMonth()-a.getMonth()+1}
+function renderHomeV4(root){let completed=Object.values(state.tasks).filter(x=>x.status==='Completato').length;root.innerHTML=header('Panoramica progetto','Il progetto, le scadenze e i principali indicatori')+`<section class="panel"><div class="fields"><div class="field"><label for="startDateV4">Data effettiva di avvio del progetto</label><input id="startDateV4" type="date" value="${esc(projectStart())}"></div><div class="field"><label>Durata</label><div class="fakefield">${DATA.meta.durationMonths} mesi</div></div><div class="field"><label>Fine teorica (durata progettuale)</label><div class="fakefield">${esc(longDate(DATA.meta.durationMonths))}</div></div><button class="btn primary" id="saveStart">Aggiorna calendario</button></div><p class="help">La data di avvio determina M1 e tutte le date mostrate nei report. La modifica non altera gli identificativi né le finestre relative dei task.</p></section><div class="cards"><div class="stat"><b>${Object.keys(DATA.wp).length}</b><span>Work Package</span></div><div class="stat"><b>${DATA.tasks.length}</b><span>Task</span></div><div class="stat"><b>${DATA.allDeliverables.length}</b><span>Deliverable</span></div><div class="stat"><b>${partners.length}</b><span>Partner</span></div></div><div class="twocol"><section class="panel"><h2>Stato del lavoro</h2><div class="trend"><div class="tile"><b>${completed}</b>Task completati</div><div class="tile"><b>${Object.values(state.notes).reduce((a,b)=>a+b.length,0)}</b>Note</div><div class="tile"><b>${state.entries.length}</b>Movimenti</div></div><div class="buttons"><button class="btn" id="homeExplore">Esplora progetto</button><button class="btn" id="homeBudget">Budget e costi</button><button class="btn" id="homePert">PERT</button></div></section><section class="panel"><h2>Scadenze principali</h2><p class="help">Seleziona un mese per vedere tutte le deliverable e le milestone ufficiali.</p><div class="list">${[...new Set([...DATA.allDeliverables.map(d=>d.month),...DATA.allMilestones.map(m=>m.month)])].sort((a,b)=>a-b).map(m=>`<button class="item" data-open="M${m}"><b>M${m} · ${esc(stamp(m))}</b><small>${DATA.allDeliverables.filter(d=>d.month===m).length} deliverable · ${DATA.allMilestones.filter(x=>x.month===m).length} milestone ufficiali</small></button>`).join('')}</div></section></div>`;$('#saveStart').onclick=()=>{let v=$('#startDateV4').value;if(!v)return alert('Inserisci una data valida');modifyProject(p=>{p.meta.startDate=v;let d=new Date(v+'T12:00:00');d.setMonth(d.getMonth()+p.meta.durationMonths);d.setDate(d.getDate()-1);p.meta.endDate=d.toISOString().slice(0,10)});};$('#homeExplore').onclick=()=>setView('catalog');$('#homeBudget').onclick=()=>setView('budget');$('#homePert').onclick=()=>setView('pert');bindOpen(root)}
+renderHome=renderHomeV4;
+function renderCatalogV4(root){root.innerHTML=header('Esplora progetto','Ricerca trasversale e schede coerenti con collegamenti navigabili')+`<section class="panel"><div class="fields"><div class="field" style="flex:2"><label>Ricerca libera</label><input id="search" placeholder="Nome, WP, partner, task, deliverable…"></div><div class="field"><label>Categoria</label><select id="cat"><option value="all">Tutti</option><option value="wp">Work Package</option><option value="tasks">Task</option><option value="del">Deliverable</option><option value="ms">Milestone</option><option value="partners">Partner</option><option value="researcher">Ricercatori</option></select></div><div class="field"><label>WP</label><select id="wpFilter"><option value="">Tutti</option>${Object.keys(DATA.wp).map(w=>`<option>${w}</option>`).join('')}</select></div></div><div id="results" class="list"></div></section>`;const draw=()=>{let q=$('#search').value.toLowerCase(),w=$('#wpFilter').value,k=$('#cat').value;let collections=[['wp',Object.values(DATA.wp)],['tasks',DATA.tasks],['del',DATA.allDeliverables],['ms',DATA.allMilestones],['partners',partners],['researcher',state.researchers]];let list=collections.filter(([kind])=>k==='all'||k===kind).flatMap(([kind,items])=>items.map(item=>({kind,item}))).filter(({kind,item:x})=>(!w||x.wp===w||x.id===w||(kind==='partners'&&getPM(x.short,w)>0)||(kind==='researcher'&&getPM(x.partner,w)>0))&&JSON.stringify(x).toLowerCase().includes(q));$('#results').innerHTML=list.length?list.map(({kind,item:x})=>`<button class="item colored-item kind-${kind}" data-open="${esc(x.short||x.id)}">${objBadge(kind)} <b>${esc(x.id||x.short)} · ${esc(x.title||x.name||[x.first,x.last].join(' '))}</b><small>${esc(x.wp||x.lead||(kind==='partners'?countryOf(x):x.partner)||'')} ${x.month?'· M'+x.month:''}</small></button>`).join(''):'<p class="help">Nessun risultato.</p>';bindOpen($('#results'))};['search','cat','wpFilter'].forEach(id=>$('#'+id).addEventListener(id==='search'?'input':'change',draw));draw()};renderCatalog=renderCatalogV4;
+function makePeriodsV4(mode,granularity){if(mode!=='annual'){let size=granularity==='semester'?6:3;return Array.from({length:Math.ceil(DATA.meta.durationMonths/size)},(_,i)=>({key:'P'+i,name:(size===6?'Semestre ':'Trimestre ')+(i+1)+' · M'+(i*size+1)+'–M'+Math.min(DATA.meta.durationMonths,(i+1)*size),from:i*size+1,to:Math.min(DATA.meta.durationMonths,(i+1)*size)}))}let out=[],first=monthDate(1).getFullYear(),last=monthDate(DATA.meta.durationMonths).getFullYear();for(let y=first;y<=last;y++){let ms=Array.from({length:DATA.meta.durationMonths},(_,i)=>i+1).filter(m=>monthDate(m).getFullYear()===y);if(ms.length)out.push({key:String(y),name:String(y),from:ms[0],to:ms[ms.length-1]})}return out}makePeriods=makePeriodsV4;
+function budgetGroup(){return selectedPartner==='Tutti'?partners.map(x=>x.short):state.settings.countries?.length?partners.filter(p=>state.settings.countries.includes(countryOf(p))).map(p=>p.short):[selectedPartner]}
+function pselectV4(){return `<div class="field"><label>Partner</label><select id="partnerSel"><option value="Tutti" ${selectedPartner==='Tutti'?'selected':''}>Tutti</option>${partners.map(p=>`<option value="${esc(p.short)}" ${p.short===selectedPartner?'selected':''}>${esc(p.name)} · ${esc(countryOf(p))}</option>`).join('')}</select></div>`}pselect=pselectV4;
+function budgetControlsV4(){return `<div class="fields">${pselect()}<div class="field"><label>Paesi (multiselezione)</label><select id="countrySel" multiple size="4" title="Ctrl/Cmd per più scelte">${[...new Set(partners.map(countryOf))].map(x=>`<option ${state.settings.countries?.includes(x)?'selected':''}>${esc(x)}</option>`).join('')}</select></div><div class="field"><label>Prospettiva</label><select id="budgetMode"><option value="annual">Istituto · anni solari</option><option value="project">Progetto europeo</option></select></div><div class="field" id="granBox"><label>Periodo</label><select id="gran"><option value="quarter">Trimestri</option><option value="semester">Semestri</option></select></div></div>`}budgetControls=budgetControlsV4;
+function renderBudgetV4(root){let group=budgetGroup(),mode=state.settings.period||'annual',gran=state.settings.granularity||'quarter',periods=makePeriods(mode,gran),sum=f=>group.reduce((a,p)=>a+f(p),0),pm=sum(p=>partners.find(x=>x.short===p).pms.reduce((a,b)=>a+b,0)),planned=sum(p=>Object.keys(DATA.wp).reduce((a,w)=>a+budgetFor(p,w),0)),spent=sum(p=>sumEntries(p));root.innerHTML=header('Budget e costi','Consuntivi e previsioni, per partner e per Paese')+budgetControls()+`<div class="cards"><div class="stat"><b>${num(pm)}</b><span>PM previsti</span></div><div class="stat"><b>${money(planned)}</b><span>Budget inserito</span></div><div class="stat"><b>${money(spent)}</b><span>Costi registrati</span></div><div class="stat"><b>${money(planned-spent)}</b><span>Residuo</span></div></div><section class="panel"><h2>Ripartizione per periodo</h2><p class="help">Selezione: ${esc(group.length===partners.length?'Tutti i partner':group.join(', ')||'nessun partner')}. Le somme sono calcolate sui budget inseriti, non su importi ipotizzati.</p><div class="tablewrap"><table><thead><tr><th>Periodo</th><th>PM previsti</th><th>Budget previsto</th><th>Spese registrate</th><th>Scostamento</th></tr></thead><tbody>${periods.map(t=>{let pm=sum(p=>pmForPeriod(p,t)),b=sum(p=>budgetForPeriod(p,t)),c=sum(p=>spendForPeriod(p,t));return `<tr><td><b>${esc(t.name)}</b></td><td>${num(pm)}</td><td>${money(b)}</td><td>${money(c)}</td><td>${money(b-c)}</td></tr>`}).join('')}<tr class="total-row"><th>TOTALE</th><th>${num(pm)}</th><th>${money(planned)}</th><th>${money(spent)}</th><th>${money(planned-spent)}</th></tr></tbody></table></div></section><section class="panel"><h2>Budget per Work Package</h2><p class="help">Importi modificabili quando è selezionato un singolo partner.</p><div class="tablewrap"><table><thead><tr><th>WP</th><th>PM</th><th>Budget (€)</th></tr></thead><tbody>${Object.keys(DATA.wp).map(w=>`<tr><td>${linkbtn(w)}</td><td>${num(sum(p=>getPM(p,w)))}</td><td>${group.length===1?`<input class="num budgetInput" data-wp="${w}" type="number" step=".01" min="0" value="${budgetFor(group[0],w)||''}" placeholder="Non definito">`:money(sum(p=>budgetFor(p,w)))}</td></tr>`).join('')}</tbody></table></div>${group.length===1?`<div class="buttons"><button class="btn primary" id="saveBudgets">Salva budget</button><select id="allocWp">${Object.keys(DATA.wp).filter(w=>getPM(group[0],w)>0).map(w=>`<option>${w}</option>`).join('')}</select><button class="btn" id="allocate">Distribuisci PM per mese</button></div>`:''}</section>`;$('#partnerSel').onchange=e=>{selectedPartner=e.target.value;state.settings.partner=selectedPartner;if(selectedPartner!=='Tutti')state.settings.countries=[];save();render()};$('#countrySel').onchange=e=>{state.settings.countries=[...e.target.selectedOptions].map(o=>o.value);selectedPartner='Tutti';state.settings.partner='Tutti';save();render()};$('#budgetMode').value=mode;$('#gran').value=gran;$('#granBox').style.display=mode==='annual'?'none':'';$('#budgetMode').onchange=e=>{state.settings.period=e.target.value;save();render()};$('#gran').onchange=e=>{state.settings.granularity=e.target.value;save();render()};if(group.length===1){$('#saveBudgets').onclick=()=>{root.querySelectorAll('.budgetInput').forEach(el=>{let k=group[0]+'|'+el.dataset.wp;if(el.value.trim()==='')delete state.budgets[k];else state.budgets[k]=Math.max(0,Number(el.value))});save();render()};$('#allocate').onclick=()=>allocationDrawer(group[0],$('#allocWp').value)}bindOpen(root)}renderBudget=renderBudgetV4;
+function researcherRate(r,date){let rates=(r.rates||[]).filter(x=>x.from<=date&&(!x.to||x.to>=date));return rates.length?Number(rates.sort((a,b)=>b.from.localeCompare(a.from))[0].amount):null}
+function renderResearchers(root){let sel=state.settings.researchPartner||'IRST',people=state.researchers.filter(x=>sel==='Tutti'||x.partner===sel);root.innerHTML=header('Ricercatori coinvolti','Anagrafica locale, contratti e costi mensili storicizzati')+`<section class="panel"><div class="fields"><div class="field"><label>Partner</label><select id="researchPartner"><option>Tutti</option>${partners.map(p=>`<option value="${esc(p.short)}" ${p.short===sel?'selected':''}>${esc(p.name)}</option>`).join('')}</select></div><button class="btn primary" id="addResearcher">＋ Ricercatore</button></div><div class="tablewrap"><table><thead><tr><th>Nome e cognome</th><th>Partner</th><th>Contratto</th><th>Email</th><th>ORCID</th><th>Costo mensile applicabile oggi</th><th></th></tr></thead><tbody>${people.length?people.map(r=>`<tr><td>${linkbtn(r.id,r.first+' '+r.last)}</td><td>${linkbtn(r.partner)}</td><td>${esc(r.contract||'—')}</td><td>${esc(r.email||'—')}</td><td>${esc(r.orcid||'—')}</td><td>${researcherRate(r,new Date().toISOString().slice(0,10))===null?'Da definire':money(researcherRate(r,new Date().toISOString().slice(0,10)))}</td><td><button class="btn small" data-edit-research="${esc(r.id)}">Modifica</button></td></tr>`).join(''):'<tr><td colspan="7">Nessun ricercatore presente. Puoi aggiungerlo senza modificare la proposal.</td></tr>'}</tbody></table></div></section><div class="warning">Costi storici: ogni tariffa è valida da una data a un'altra. Le registrazioni economiche già salvate mantengono l'importo calcolato alla data di rendicontazione.</div>`;$('#researchPartner').onchange=e=>{state.settings.researchPartner=e.target.value;save();render()};$('#addResearcher').onclick=()=>researcherDrawer();root.querySelectorAll('[data-edit-research]').forEach(b=>b.onclick=()=>researcherDrawer(state.researchers.find(x=>x.id===b.dataset.editResearch)));bindOpen(root)}
+function researcherDrawer(r){let x=r||{id:'R'+Date.now(),partner:state.settings.researchPartner&&state.settings.researchPartner!=='Tutti'?state.settings.researchPartner:'Tutti',first:'',last:'',contract:'',email:'',orcid:'',rates:[]};openDrawer(`<h2>${r?'Modifica':'Nuovo'} ricercatore</h2><div class="fields"><div class="field"><label>Nome</label><input id="rFirst" value="${esc(x.first)}"></div><div class="field"><label>Cognome</label><input id="rLast" value="${esc(x.last)}"></div><div class="field"><label>Partner</label><select id="rPartner">${partners.map(p=>`<option value="${esc(p.short)}" ${p.short===x.partner?'selected':''}>${esc(p.name)}</option>`).join('')}</select></div><div class="field"><label>Tipo di contratto</label><input id="rContract" value="${esc(x.contract)}"></div><div class="field"><label>Email</label><input type="email" id="rEmail" value="${esc(x.email)}"></div><div class="field"><label>ORCID</label><input id="rOrcid" placeholder="0000-0000-0000-0000" value="${esc(x.orcid)}"></div></div><h3>Storico delle tariffe mensili</h3><div class="list" id="rateRows">${(x.rates||[]).map((v,i)=>`<div class="compact-row">${esc(v.from)} – ${esc(v.to||'senza scadenza')} · ${money(v.amount)} <button class="btn small danger" data-remove-rate="${i}">Rimuovi</button></div>`).join('')}</div><div class="fields"><div class="field"><label>Valida da</label><input type="date" id="rateFrom" value="${new Date().toISOString().slice(0,10)}"></div><div class="field"><label>Valida a (facoltativa)</label><input type="date" id="rateTo"></div><div class="field"><label>€ / mese</label><input type="number" id="rateAmount" min="0" step=".01"></div><button class="btn" id="rateAdd">＋ Aggiungi tariffa</button></div><div class="buttons"><button class="btn primary" id="saveResearcher">Salva ricercatore</button>${r?'<button class="btn danger" id="deleteResearcher">Elimina</button>':''}</div>`);$('#rateAdd').onclick=()=>{let from=$('#rateFrom').value,to=$('#rateTo').value,amount=Number($('#rateAmount').value);if(!from||$('#rateAmount').value===''||!Number.isFinite(amount)||amount<0||to&&to<from)return alert('Controlla intervallo e costo');Object.assign(x,{first:$('#rFirst').value,last:$('#rLast').value,partner:$('#rPartner').value,contract:$('#rContract').value,email:$('#rEmail').value,orcid:$('#rOrcid').value});x.rates.push({from,to,amount});researcherDrawer(x)};$('#drawer').querySelectorAll('[data-remove-rate]').forEach(b=>b.onclick=()=>{Object.assign(x,{first:$('#rFirst').value,last:$('#rLast').value,partner:$('#rPartner').value,contract:$('#rContract').value,email:$('#rEmail').value,orcid:$('#rOrcid').value});x.rates.splice(+b.dataset.removeRate,1);researcherDrawer(x)});$('#saveResearcher').onclick=()=>{let first=$('#rFirst').value.trim(),last=$('#rLast').value.trim(),mail=$('#rEmail').value.trim(),orcid=$('#rOrcid').value.trim();if(!first||!last)return alert('Nome e cognome obbligatori');if(orcid&&!/^\d{4}-\d{4}-\d{4}-[\dX]{4}$/i.test(orcid))return alert('ORCID non valido');let out={...x,first,last,partner:$('#rPartner').value,contract:$('#rContract').value,email:mail,orcid};let i=state.researchers.findIndex(z=>z.id===x.id);if(i<0)state.researchers.push(out);else state.researchers[i]=out;save();closeDrawer();setView('researchers')};if(r)$('#deleteResearcher').onclick=()=>{if(confirm('Eliminare il ricercatore? Le registrazioni già salvate rimangono.')){state.researchers=state.researchers.filter(z=>z.id!==x.id);save();closeDrawer();render()}};}
+const entryDrawerOriginal=entryDrawer;
+function entryDrawerV4(edit=null){entryDrawerOriginal(edit);const parent=$('#drawer');let existing=edit||{};let researcherField=`<div class="field" style="flex:1;min-width:220px"><label>Ricercatore (solo personale)</label><select id="eResearcher"><option value="">Seleziona ricercatore</option>${state.researchers.filter(r=>r.partner===selectedPartner).map(r=>`<option value="${esc(r.id)}" ${r.id===existing.researcherId?'selected':''}>${esc(r.first+' '+r.last)}</option>`).join('')}</select></div><div class="field" style="width:100%"><label>Giustificativo / documento (altre spese)</label><input id="eEvidence" type="file"><p class="help">Fino a 900 KB. Conservato nell'archivio esportato.</p>${existing.evidence?.name?`<small>Allegato: ${esc(existing.evidence.name)}</small>`:''}</div>`;let container=parent.querySelector('.fields');container.insertAdjacentHTML('beforeend',researcherField);let ePm=$('#ePm'),eAmount=$('#eAmount'),cat=$('#eCategory'),date=$('#eDate'),res=$('#eResearcher');if(state.settings.prefillTask&&!edit){$('#eTask').value=state.settings.prefillTask;$('#eWp').value=state.settings.prefillWP||'WP8';delete state.settings.prefillTask;delete state.settings.prefillWP} else if(state.settings.prefillWP&&!edit){$('#eWp').value=state.settings.prefillWP;delete state.settings.prefillWP}function recalc(){if(cat.value!=='Personale'||!res.value)return;let researcher=state.researchers.find(x=>x.id===res.value),rate=researcherRate(researcher,date.value);if(rate===null){eAmount.value='';return;}eAmount.value=(rate*Number(ePm.value||0)).toFixed(2);$('#ePerson').value=researcher.first+' '+researcher.last;}[cat,date,ePm,res].forEach(el=>el.addEventListener('change',recalc));ePm.addEventListener('input',recalc);let oldSave=$('#saveEntry').onclick;$('#saveEntry').onclick=async()=>{if(cat.value==='Personale'&&res.value){let r=state.researchers.find(x=>x.id===res.value),rate=researcherRate(r,date.value);if(rate===null)return alert('Aggiungi una tariffa mensile valida per la data selezionata');eAmount.value=(rate*Number(ePm.value||0)).toFixed(2)}let f=$('#eEvidence').files[0],data=existing.evidence||null;if(f){if(f.size>900000)return alert('Documento oltre 900 KB');data=await new Promise((ok,fail)=>{let reader=new FileReader();reader.onload=()=>ok({name:f.name,data:reader.result});reader.onerror=fail;reader.readAsDataURL(f)})}let len=state.entries.length;oldSave();let record=edit?state.entries.find(x=>x.id===edit.id):state.entries[len];if(record){record.researcherId=res.value||'';record.evidence=data;save()}};}
+entryDrawer=entryDrawerV4;
+const renderEntriesOriginal=renderEntries;
+function renderEntriesV4(root){if(selectedPartner==='Tutti')selectedPartner='IRST';renderEntriesOriginal(root);let table=root.querySelector('#entryRows');if(table){const obs=new MutationObserver(()=>{table.querySelectorAll('tr').forEach(tr=>{let button=tr.querySelector('[data-edit]');if(!button||tr.dataset.fileAdded)return;tr.dataset.fileAdded='yes';let entry=state.entries.find(e=>e.id===button.dataset.edit);if(entry?.evidence?.data){let td=tr.querySelector('td:nth-child(3)');td?.insertAdjacentHTML('beforeend',`<div><a href="${entry.evidence.data}" download="${esc(entry.evidence.name)}">▣ ${esc(entry.evidence.name)}</a></div>`)}})});obs.observe(table,{childList:true});} }
+renderEntries=renderEntriesV4;
+// Presentazioni sintetiche ricavate dai ruoli descritti nella Part B; non sostituiscono la descrizione integrale.
+const PARTNER_SUMMARIES = {"AIRI": "Coordinamento scientifico; leadership di WP1, WP5 e WP9, sviluppo dei modelli di intelligenza artificiale federata.", "AOU Parma": "Partner clinico per ematologia e leucemia mieloide acuta, con competenze in genomica e sequenziamento.", "IRCCS AOUBO": "Partner clinico responsabile del caso d’uso carcinoma mammario e contributi all’analisi multimodale.", "AUSL-RE": "Lead WP2: coorti cliniche, governance dei dati, etica e interoperabilità.", "IRST": "Lead WP8: validazione clinica in ambito operativo e adozione; contributo al WP2 su coorti, governance ed interoperabilità FHIR.", "AUSL-MO": "Sito di validazione clinica, non di training; coinvolto nel nodo nazionale HPC.", "BSC": "Contribuisce framework e software per l’esecuzione federata, come partner autofinanziato.", "MOLIT Institute": "Lead WP4: specifiche di interoperabilità, protocollo OANC, implementation guide FHIR e servizi terminologici.", "MOLIT Service": "Lead WP6 e WP7: piattaforma VITU, integrazione del supporto decisionale e valutazione della preparazione regolatoria.", "HHN": "Lead WP3: Data Sharing Framework e middleware per la piattaforma di federated learning.", "MUUZA": "Contributo a GDPR, aspetti MDR/SaMD e design UX per il supporto decisionale clinico."};
+partners.forEach(p=>{if(!p.description)p.description=PARTNER_SUMMARIES[p.short]||''});
+// Le posizioni PERT sono già persistite in state.pertOffsets; le relazioni si aprono nella scheda nodo.
+function enhanceIdentity(){let content=$('#main .panel');if(!content||$('#identityPanel'))return;content.insertAdjacentHTML('beforebegin',`<section class="panel" id="identityPanel"><h2>Identità del progetto</h2><p class="help">Logo PNG, JPG, GIF o SVG. Il formato originale è conservato nel backup JSON. Un PNG/JPEG racchiuso in SVG non diventa vettoriale: conversione vettoriale automatica non ancora disponibile.</p><div class="fields"><div class="field"><label>Logo</label><input id="logoUpload" type="file" accept="image/png,image/jpeg,image/gif,image/svg+xml"></div><div class="field"><label>Colore principale</label><input id="accentInput" type="color" value="${esc(state.identity.accent||'#075c69')}"></div><button class="btn" id="clearLogo">Rimuovi logo</button></div><div id="logoPreview" class="logo-preview">${state.identity.logo?`<img src="${state.identity.logo}" alt="Logo progetto">`:'Nessun logo personalizzato'}</div></section>`);$('#logoUpload').onchange=async e=>{let f=e.target.files[0];if(!f)return;if(f.size>1000000)return alert('Il logo non deve superare 1 MB');if(!['image/png','image/jpeg','image/gif','image/svg+xml'].includes(f.type))return alert('Formato non supportato');let data;if(f.type==='image/svg+xml'){let text=await f.text();let doc=new DOMParser().parseFromString(text,'image/svg+xml');if(doc.querySelector('parsererror')||doc.documentElement.tagName.toLowerCase()!=='svg'||/<script\b|<foreignObject\b|on\w+\s*=|(?:href|src)\s*=\s*["'](?:https?:|javascript:|data:text\/html)/i.test(text))return alert('SVG non sicuro o non valido: utilizzare un SVG senza script, eventi e contenuti esterni');data='data:image/svg+xml;base64,'+btoa(unescape(encodeURIComponent(text)))}else data=await new Promise((ok,fail)=>{let r=new FileReader();r.onload=()=>ok(r.result);r.onerror=fail;r.readAsDataURL(f)});state.identity.logo=data;state.identity.logoName=f.name;save();render()};$('#clearLogo').onclick=()=>{state.identity.logo=null;state.identity.logoName='';save();render()};$('#accentInput').onchange=e=>{state.identity.accent=e.target.value;save();render()}}
+const oldRender=render;
+render=function(){oldRender();if(view==='researchers')renderResearchers($('#main'));if(view==='settings')enhanceIdentity();document.documentElement.style.setProperty('--teal',state.identity?.accent||'#075c69');let brand=document.querySelector('header .brand');if(brand){brand.innerHTML=`${state.identity?.logo?`<img class="header-logo" src="${state.identity.logo}" alt="Logo del progetto">`:'✦'} <span>${esc(DATA.meta.shortName||'OncoAI')} · Project Navigator</span>`}};
+const nav=document.querySelector('aside#nav');nav.querySelector('[data-view="entries"]').insertAdjacentHTML('afterend','<button class="navbutton" data-view="researchers">♧ &nbsp; Ricercatori coinvolti</button>');nav.querySelector('[data-view="researchers"]').addEventListener('click',()=>setView('researchers'));
+
+/* OncoAI Navigator 5 — progetto vuoto e modello pubblicabile */
+function blankProjectModel(){return {meta:{name:'Nuovo progetto',shortName:'Progetto',durationMonths:12,startDate:'2026-01-01',description:''},wp:{},tasks:[],partners:[],pert:[],links:[],wpLinks:[],allDeliverables:[],allMilestones:[]}}
+function isProjectBlank(){return !Object.keys(DATA.wp||{}).length&&!DATA.tasks?.length&&!DATA.partners?.length&&!DATA.allDeliverables?.length&&!DATA.allMilestones?.length}
+function emptyProjectNow(){if(!confirm('ATTENZIONE: svuotare completamente progetto, dati gestionali, ricercatori, note, budget, documenti e logo? Esporta prima un backup.'))return;if(!confirm('Confermi la cancellazione DEFINITIVA dei dati attualmente memorizzati in questo browser?'))return;let fresh=blankProjectModel();state=initial();DATA=fresh;partners=[];state.project=JSON.parse(JSON.stringify(fresh));state.settings.partner='Tutti';state.settings.researchPartner='Tutti';selectedPartner='Tutti';closeDrawer();save();setView('home')}
+function downloadEmptyTemplate(){
+  // Clone and strip runtime state before making distributable HTML.
+  const clone=document.documentElement.cloneNode(true);
+  const main=clone.querySelector('#main');if(main)main.innerHTML='';
+  const dr=clone.querySelector('#drawer');if(dr)dr.innerHTML='';
+  clone.querySelectorAll('#pertSvg, #pertViewport').forEach(x=>x.remove());
+  const scripts=[...clone.querySelectorAll('script')];
+  if(!scripts.length)return alert('Sorgente non disponibile per esportare il modello');
+  let script=scripts[0].textContent;
+  const beg=script.indexOf('let DATA=');const end=script.indexOf(';\nconst BASE_PROJECT=',beg);
+  if(beg<0||end<0)return alert('Struttura interna non riconosciuta');
+  script=script.slice(0,beg)+'let DATA='+JSON.stringify(blankProjectModel())+script.slice(end);
+  // Non includere le descrizioni OncoAI hardcoded nel modello GitHub.
+  script=script.replace(/const PARTNER_SUMMARIES = \{[^;]*\};/, 'const PARTNER_SUMMARIES = {};');
+  script=script.replace('const KEY=\'OncoAI_v2_local\'', 'const KEY=\'Navigator_blank_local_v5\'');
+  script=script.replace(/partner:'Tutti'/g, "partner:'Tutti'").replace(/researchPartner:'Tutti'/g, "researchPartner:'Tutti'");
+  scripts[0].textContent=script;
+  clone.querySelector('title').textContent='Project Navigator · Modello vuoto';
+  download('Project_Navigator_Vuoto_GitHub.html','<!doctype html>\n'+clone.outerHTML,'text/html;charset=utf-8');
+}
+const renderWithData=render;
+render=function(){
+  if(!state.project&&isProjectBlank()){state.project=JSON.parse(JSON.stringify(DATA));save()}
+  if(isProjectBlank()&&view!=='settings'){
+    const main=$('#main');
+    main.innerHTML=header('Nuovo progetto · spazio vuoto','Non ci sono dati del progetto incorporati: importa un archivio JSON oppure configura il tuo progetto.')+
+    `<section class="panel"><h2>Inizia da un archivio</h2><p>Carica un backup completo esportato da Project Navigator: saranno ripristinati progetto, partner, task, PERT, budget, ricercatori e allegati.</p><div class="buttons"><button class="btn primary" id="blankGoImport">Importa archivio JSON</button><button class="btn" id="blankGoSettings">Configurazione e struttura</button></div></section><section class="panel"><h2>Progetto vuoto</h2><p class="help">0 Work Package · 0 Task · 0 Partner · 0 Deliverable · 0 Milestone. Non sono presenti dati gestionali o loghi. Per creare un nuovo progetto da zero, apri l'editor JSON in Dati e backup e definisci gli oggetti.</p></section>`;
+    $('#blankGoImport').onclick=()=>{setView('settings');$('#importFile').click()};
+    $('#blankGoSettings').onclick=()=>setView('settings');
+    document.querySelector('.brand').textContent='✦ Project Navigator · Nuovo progetto';
+    return;
+  }
+  renderWithData();
+};
+
+render();
+</script>
+<script>globalThis.__codexVisualizationInitialGlobals={"statePersistence":"none","stateModelContext":"none","visualizationStyleVariables":{"--accent":"rgb(232, 243, 254)","--accent-foreground":"rgb(44, 103, 197)","--background":"rgb(252, 252, 252)","--border":"rgba(0, 0, 0, 0.1)","--border-strong":"rgba(0, 0, 0, 0.15)","--card":"color-mix(in oklab, rgb(13, 13, 13) 5%, transparent)","--card-foreground":"rgb(13, 13, 13)","--corner-shape":"round","--control-spacing":"12px","--cursor-interaction":"pointer","--destructive":"rgb(146, 59, 15)","--font-mono":"ui-monospace, SFMono-Regular, \"SF Mono\", menlo, consolas, \"Liberation Mono\", monospace","--font-sans":"-apple-system-body, ui-sans-serif, -apple-system, system-ui, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"","--font-size-base":"16px","--font-weight-normal":"400","--foreground":"rgb(13, 13, 13)","--input":"rgba(0, 0, 0, 0.15)","--muted":"color-mix(in srgb, rgb(13, 13, 13) 10%, transparent)","--muted-foreground":"rgb(143, 143, 143)","--popover":"rgb(255, 255, 255)","--popover-foreground":"rgb(13, 13, 13)","--primary":"rgb(44, 103, 197)","--primary-foreground":"rgb(255, 255, 255)","--radius":"8px","--radius-2xl":"16px","--radius-lg":"8px","--radius-md":"6px","--radius-sm":"4px","--ring":"rgb(1, 105, 204)","--secondary":"rgb(243, 243, 243)","--secondary-foreground":"rgb(13, 13, 13)","--blue":"rgb(2, 133, 255)","--orange":"rgb(251, 106, 34)","--green":"rgb(4, 184, 76)","--red":"rgb(250, 66, 62)","--purple":"rgb(146, 79, 247)","--yellow":"rgb(255, 195, 0)","--visualize-paint-gutter":"0px","--viz-series-1":"rgb(44, 103, 197)","--viz-series-2":"#f2893c","--viz-series-3":"#5ec978","--viz-series-4":"#ea77b0","--viz-series-5":"#9a7aeb","--viz-series-6":"#3db9b0"},"visualizationTheme":"light"};</script>
+<style id="codex-visualization-host-theme">
+:root {}
+</style>
+<script>
+(() => {
+  // Host colors are defaults; later authored styles can give the same names
+  // their own meaning (for example, --muted as a chart's label color).
+  const hostStyles = document.getElementById("codex-visualization-host-theme");
+  const hostStyle = hostStyles.sheet.cssRules[0].style;
+  // Typography, geometry and interaction cursors still follow the host.
+  const styleForProperty = (property) =>
+    /^--(?:font-|radius|corner-shape$|control-spacing$|cursor-interaction$|icon-size$|page-content-inline-inset$|page-header-clearance$|visualize-paint-gutter$)/.test(property)
+      ? document.documentElement.style
+      : hostStyle;
+  const initialGlobals =
+    globalThis.__codexVisualizationInitialGlobals ?? globalThis.openai;
+  delete globalThis.__codexVisualizationInitialGlobals;
+  if (initialGlobals?.statePersistence != null) {
+    globalThis.openai ??= {};
+    globalThis.openai.statePersistence = initialGlobals.statePersistence;
+    globalThis.openai.stateModelContext = initialGlobals.stateModelContext ?? "none";
+  }
+  if (!false) {
+    return;
+  }
+  let appliedProperties = [];
+  const applyHostStyleVariables = (styleVariables) => {
+    if (styleVariables == null || typeof styleVariables !== "object") {
+      return;
+    }
+    document.documentElement.toggleAttribute(
+      "data-visualize-page-inline-inset", typeof styleVariables["--page-content-inline-inset"] === "string",
+    );
+    document.documentElement.toggleAttribute(
+      "data-visualize-page-header", typeof styleVariables["--page-header-clearance"] === "string",
+    );
+    document.documentElement.toggleAttribute(
+      "data-visualize-live", typeof styleVariables["--font-line-height-base"] === "string",
+    );
+    for (const property of appliedProperties) {
+      styleForProperty(property).removeProperty(property);
+    }
+    appliedProperties = [];
+    for (const [property, value] of Object.entries(styleVariables)) {
+      if (property.startsWith("--") && typeof value === "string") {
+        styleForProperty(property).setProperty(property, value);
+        appliedProperties.push(property);
+      }
+    }
+  };
+
+  const syncHostStyles = (globals) => {
+    applyHostStyleVariables(globals?.visualizationStyleVariables);
+    if (globals?.visualizationTheme != null) {
+      hostStyles.dataset.visualizationTheme = globals.visualizationTheme;
+    }
+    const sandboxDocument = globalThis.frameElement?.ownerDocument;
+    if (sandboxDocument != null && globals?.visualizationTheme != null) {
+      let colorSchemeMeta = sandboxDocument.querySelector(
+        'meta[name="color-scheme"]',
+      );
+      if (colorSchemeMeta == null) {
+        colorSchemeMeta = sandboxDocument.createElement("meta");
+        colorSchemeMeta.name = "color-scheme";
+        sandboxDocument.head.appendChild(colorSchemeMeta);
+      }
+      colorSchemeMeta.content = globals.visualizationTheme;
+      sandboxDocument.documentElement.style.colorScheme =
+        globals.visualizationTheme;
+      // Paint the host surface behind transparent saved visualization documents.
+      sandboxDocument.documentElement.style.backgroundColor =
+        hostStyle.getPropertyValue("--background");
+    }
+  };
+
+  syncHostStyles(initialGlobals);
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    syncHostStyles(event.detail?.globals);
+  });
+})();
+</script>
+
+
+<script>
+(() => {
+  const reportEnvironmentError = (value) => {
+    const error = value instanceof Error ? value : new Error(String(value));
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_error__",
+        {
+          message: error.message,
+          name: error.name,
+          stack: error.stack,
+        },
+      )
+      .catch(() => {});
+  };
+  const scriptSourceForRepair = (source) => {
+    if (!source) { return ""; }
+    try {
+      const base = new globalThis.URL("https://visualization.invalid/");
+      const url = new globalThis.URL(source, base);
+      if (url.protocol !== "http:" && url.protocol !== "https:") {
+        return url.protocol;
+      }
+      url.username = "";
+      url.password = "";
+      url.search = "";
+      url.hash = "";
+      if (url.origin === base.origin && !source.startsWith("//")) {
+        return url.pathname;
+      }
+      return url.href;
+    } catch {
+      return "";
+    }
+  };
+
+  globalThis.addEventListener("error", (event) => {
+    if (event.target?.localName === "script") {
+      // A script's own onerror may render a fallback or load an alternative.
+      // Let that handler run; failures it throws still reach the global error path.
+      const handlesError = typeof event.target.onerror === "function";
+      globalThis.queueMicrotask(() => {
+        if (!handlesError && !event.defaultPrevented) {
+          const source = scriptSourceForRepair(
+            event.target.getAttribute("src")?.trim().slice(0, 2048),
+          );
+          const error = new Error(source
+            ? "Visualization script could not be loaded: " + source
+            : "Visualization script could not be loaded");
+          error.name = "VisualizationScriptLoadError";
+          reportEnvironmentError(error);
+        }
+      });
+    } else if (event.target === globalThis) {
+      // The browser defers resize notifications to another frame; no script threw.
+      if (event.error == null && (
+        event.message === "ResizeObserver loop completed with undelivered notifications." ||
+        event.message === "ResizeObserver loop limit exceeded"
+      )) {
+        return;
+      }
+      reportEnvironmentError(event.error ?? event.message);
+    }
+  }, true);
+  globalThis.addEventListener("unhandledrejection", (event) => {
+    reportEnvironmentError(event.reason);
+  });
+})();
+</script>
+<script id="codex-visualization-variants">
+(() => {
+  let previousSnapshot = "[]";
+  let roots = [];
+  const report = () => {
+    roots = Array.from(
+      document.querySelectorAll(".viz-carousel[data-active-variant]"),
+    ).slice(0, 32);
+    const selectedVariants = roots.flatMap((root, carousel) => {
+      const variant = root.dataset.activeVariant;
+      const label = root.getAttribute("aria-label")?.slice(0, 256);
+      return variant ? [{
+        carousel,
+        ...(label == null ? {} : { label }),
+        variant: variant.slice(0, 256),
+      }] : [];
+    });
+    const snapshot = JSON.stringify(selectedVariants);
+    if (snapshot !== previousSnapshot) {
+      previousSnapshot = snapshot;
+      void globalThis.openai.callTool("__codex_visualization_annotations__", {
+        type: "variants",
+        selectedVariants,
+      }).catch(() => {});
+    }
+  };
+  const observer = new MutationObserver((records) => {
+    if (records.some((record) => record.type === "attributes") || roots.some((root) => !root.isConnected)) {
+      report();
+    }
+  });
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["data-active-variant"],
+  });
+  report();
+  globalThis.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+})();
+</script>
+<script>
+(() => {
+  const selectorInRoot = (target, root) => {
+    const parts = [];
+    for (let element = target; element != null && parts.length < 64; element = element.parentElement) {
+      const id = element.id && globalThis.CSS?.escape?.(element.id);
+      if (id && id.length <= 256) {
+        const selector = ["#" + id, ...parts].join(" > ");
+        const matches = root.querySelectorAll(selector);
+        if (matches.length === 1 && matches[0] === target) {
+          return selector;
+        }
+      }
+      let index = 1;
+      for (let sibling = element.previousElementSibling; sibling != null; sibling = sibling.previousElementSibling) {
+        if (sibling.localName === element.localName) { index += 1; }
+      }
+      const tag = globalThis.CSS?.escape?.(element.localName) ?? element.localName;
+      parts.unshift(tag + ":nth-of-type(" + index + ")");
+      if (parts.join(" > ").length > 1024) { return null; }
+      if (element.parentElement == null) {
+        const selector = parts.join(" > ");
+        const matches = root.querySelectorAll(selector);
+        return matches.length === 1 && matches[0] === target ? selector : null;
+      }
+    }
+    return null;
+  };
+  const describeTarget = (element) => {
+    if (element == null || !element.isConnected) { return undefined; }
+    const tagName = element.localName.toLowerCase();
+    if (!/^[a-z][a-z0-9-]{0,63}$/.test(tagName)) { return undefined; }
+    const parts = [];
+    let current = element;
+    for (let depth = 0; depth < 16; depth += 1) {
+      const root = current.getRootNode();
+      const selector = selectorInRoot(current, root);
+      if (selector == null) { return undefined; }
+      parts.unshift(selector);
+      if (root === document) {
+        const selector = parts.length === 1 ? parts[0] : "shadow:" + parts.join(">>>");
+        if (selector.length > 1024) { return undefined; }
+        const label = (element.getAttribute("aria-label") || element.getAttribute("title") || "")
+          .replace(/[\u0000-\u001f\u007f-\u009f\u061c\u200e\u200f\u2028-\u202e\u2066-\u2069]/gu, " ")
+          .replace(/\s+/g, " ").trim().slice(0, 160);
+        return { selector, tagName, ...(label ? { label } : {}) };
+      }
+      if (!(root instanceof ShadowRoot) || root.mode !== "open") { return undefined; }
+      current = root.host;
+    }
+    return undefined;
+  };
+  let previousSnapshot = JSON.stringify({ isHovering: false });
+  const reportHover = (event, isHovering, isTouch = false, target) => {
+    const report = isTouch
+      ? { isHovering: false, pointerType: "touch" }
+      : { isHovering, ...(isHovering && target != null ? { target } : {}) };
+    const snapshot = JSON.stringify(report);
+    if (snapshot === previousSnapshot) {
+      return;
+    }
+    previousSnapshot = snapshot;
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_hover__",
+        { ...report, eventTime: globalThis.performance.timeOrigin + event.timeStamp },
+      )
+      .catch(() => {});
+  };
+
+  let hoveredElement;
+  let isTouchHover = false;
+  let latestHover = null;
+  let latestResetTime = 0;
+  const handlePointerHover = (event) => {
+    const isTouch = event.pointerType === "touch";
+    const element = isTouch ? undefined : event.composedPath().find((element) => element instanceof Element);
+    latestHover = { event, element, isTouch };
+    if (event.type === "pointermove" && element === hoveredElement && isTouch === isTouchHover) {
+      return;
+    }
+    hoveredElement = element;
+    isTouchHover = isTouch;
+    reportHover(event, !isTouch, isTouch, isTouch ? undefined : describeTarget(element));
+  };
+  const clearHover = (event) => {
+    hoveredElement = undefined;
+    isTouchHover = false;
+    latestHover = null;
+    reportHover(event, false);
+  };
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    const resetTime = event.detail?.globals?.visualizationHoverReset;
+    if (typeof resetTime !== "number" || !Number.isFinite(resetTime) || resetTime <= latestResetTime) {
+      return;
+    }
+    latestResetTime = resetTime;
+    const latest = latestHover;
+    hoveredElement = undefined;
+    isTouchHover = false;
+    latestHover = null;
+    previousSnapshot = JSON.stringify({ isHovering: false });
+    // A host-observed exit can arrive after the pointer has already reentered.
+    if (latest != null && globalThis.performance.timeOrigin + latest.event.timeStamp > resetTime) {
+      latestHover = latest;
+      hoveredElement = latest.element;
+      isTouchHover = latest.isTouch;
+      reportHover(latest.event, !latest.isTouch, latest.isTouch,
+        latest.isTouch ? undefined : describeTarget(latest.element));
+    }
+  });
+  globalThis.addEventListener("pointerover", handlePointerHover, { capture: true });
+  // Moves between descendants in one shadow root do not emit pointerover outside
+  // that root. The identity guard avoids selector work while a target is unchanged.
+  globalThis.addEventListener("pointermove", handlePointerHover, { capture: true });
+  globalThis.addEventListener(
+    "pointerout",
+    (event) => {
+      if (event.pointerType !== "touch" && event.relatedTarget == null) {
+        clearHover(event);
+      }
+    },
+    { capture: true },
+  );
+  globalThis.addEventListener("pagehide", clearHover);
+})();
+</script>
+<script>
+(() => {
+  const report = (method) => {
+    void globalThis.openai.callTool("__codex_inline_visualization_input__", { method }).catch(() => {});
+  };
+  globalThis.addEventListener("pointerdown", () => report("pointer"), { capture: true });
+  globalThis.addEventListener("keydown", (event) => {
+    if (!event.isComposing && event.key !== "Shift" && !event.altKey && !event.ctrlKey && !event.metaKey) {
+      report(["Tab","ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(event.key) ? "keyboard-navigation" : "keyboard");
+    }
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  const bubbledClicks = new WeakSet();
+  const interactiveSelector = [
+    "button", "input", "select", "textarea", "label", "summary", "a[href]",
+    "audio[controls]", "video[controls]", "[onclick]", "[data-visualization-interactive]",
+    '[contenteditable]:not([contenteditable="false"])',
+    ...[
+      "button", "checkbox", "combobox", "gridcell", "link", "listbox",
+      "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio",
+      "scrollbar", "searchbox", "slider", "spinbutton", "switch", "tab",
+      "textbox", "treeitem",
+    ].map((role) => '[role~="' + role + '"]'),
+  ].join(",");
+
+  globalThis.addEventListener("click", (event) => bubbledClicks.add(event));
+  globalThis.addEventListener("click", (event) => {
+    // Capture the path before a control can remove itself. Custom delegated
+    // controls can opt in with data-visualization-interactive.
+    const elements = event.composedPath().filter((target) => target instanceof Element);
+    const control = elements.find((element) => element.matches(interactiveSelector));
+    const widgetControl = event.isTrusted && control != null &&
+      !control.matches('img, [role~="img"]') &&
+      !elements.some((element) => element.matches('a[href], [role~="link"]'));
+    const isInteractiveTarget = control != null || elements.some((element) =>
+      element.hasAttribute("tabindex") && element.tabIndex >= 0) ||
+      (elements[0] != null && getComputedStyle(elements[0]).cursor === "pointer");
+    // Use a task, not a microtask: native dispatch can run microtasks between
+    // listeners. Propagation flags are reset when dispatch finishes:
+    // https://dom.spec.whatwg.org/#concept-event-dispatch
+    globalThis.setTimeout(() => {
+      void globalThis.openai.callTool("__codex_inline_visualization_click__", {
+        ...(widgetControl ? {widgetControl: true} : {}),
+        isInteractive: isInteractiveTarget || event.defaultPrevented ||
+          (event.bubbles && !bubbledClicks.has(event)),
+      }).catch(() => {});
+    }, 0);
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  globalThis.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.altKey || event.ctrlKey || event.metaKey ||
+      event.shiftKey || !["ArrowLeft", "ArrowRight", "Escape"].includes(event.key)) {
+      return;
+    }
+    const target = event.composedPath().find((element) => element instanceof HTMLElement);
+    const editable = target?.closest("[contenteditable]");
+    const editing = target && (target.isContentEditable ||
+      (editable && editable.getAttribute("contenteditable") !== "false") ||
+      target.closest('input, textarea, select, [role="slider"], [role="spinbutton"], [role="combobox"], [role="listbox"], [role="grid"], [role="tree"], [role="tablist"], [role="menu"]'));
+    if (event.key !== "Escape" && editing) { return; }
+    // Let the widget handle the key before forwarding it across the sandbox.
+    globalThis.setTimeout(() => {
+      if (!event.defaultPrevented && globalThis.openai?.displayMode === "fullscreen") {
+        void globalThis.openai.callTool("__codex_inline_visualization_preview_key__", {
+          key: event.key,
+        }).catch(() => {});
+      }
+    }, 0);
+  });
+})();
+</script>
+
+
+
+
+
+
+
+
+<script>
+(() => {
+  const contentRange = document.createRange();
+  let waitingForStreamRoot = false ? document.querySelector("main") : null;
+  const markStreamReady = () => {
+    waitingForStreamRoot = null;
+    globalThis.removeEventListener("openai:set_globals", onStreamGlobals);
+    void globalThis.openai.callTool("__codex_inline_visualization_ready__", {}).catch(() => {});
+  };
+  const onStreamGlobals = (event) => {
+    const update = event.detail?.globals?.__appBlockStream;
+    if (update?.isFinal) {
+      markStreamReady();
+    } else if (update != null) {
+      scheduleHeightReport();
+    }
+  };
+  const measureChild = (child, bodyStyle) => {
+    const rect = child.getBoundingClientRect();
+    // Child margins can collapse above the root without adding to its height.
+    // The host adds body padding separately.
+    return Math.max(child.scrollHeight, rect.height) + Math.max(
+      0,
+      rect.top - document.body.getBoundingClientRect().top - parseFloat(bodyStyle.paddingTop),
+    );
+  };
+  let previousMeasurement = null;
+  let lastReportedHeight;
+  let heightReportTimer = null;
+  const reportHeight = () => {
+    const bodyChildren = Array.from(document.body.children).filter(
+      (element) =>
+        element.tagName !== "SCRIPT" &&
+        element.tagName !== "STYLE" &&
+        element.getAttribute("role") !== "tooltip",
+    );
+    const bodyStyle = globalThis.getComputedStyle(document.body);
+    const viewportWidth = globalThis.innerWidth;
+    const contentWidth = Math.max(
+      0,
+      Math.round(
+        viewportWidth -
+          parseFloat(bodyStyle.paddingLeft) -
+          parseFloat(bodyStyle.paddingRight),
+      ),
+    );
+    let contentHeight;
+    if (bodyChildren.length === 0) {
+      contentRange.selectNodeContents(document.body);
+      contentHeight = contentRange.getBoundingClientRect().height;
+    } else if (bodyChildren.length === 1) {
+      contentHeight = measureChild(bodyChildren[0], bodyStyle);
+    } else {
+      const bodyTop = document.body.getBoundingClientRect().top;
+      contentHeight = Math.max(
+        ...bodyChildren.map(
+          (bodyChild) => bodyChild.getBoundingClientRect().bottom - bodyTop,
+        ),
+      );
+    }
+    // A short first line is drawable before the chart is tall enough for a graphical preview.
+    // Check before deduplicating height: text can arrive inside a fixed-height empty box.
+    if (waitingForStreamRoot != null && contentWidth > 0 && (
+      contentHeight >= 32 ||
+      (contentHeight > 0 && waitingForStreamRoot.innerText.trim() !== "")
+    )) {
+      markStreamReady();
+    }
+    const viewportHeight = globalThis.innerHeight;
+    const previous = previousMeasurement;
+    const sameWidth = viewportWidth === previous?.viewportWidth && contentWidth === previous.contentWidth;
+    // At fractional zoom, innerHeight and CSS heights can round a pixel apart.
+    const matchesViewport = (height) => Math.abs(height - viewportHeight) <= 1;
+    const root = bodyChildren.length === 1 ? bodyChildren[0] : null;
+    const minimum = root && parseFloat(globalThis.getComputedStyle(root).minHeight);
+    let initialMinimum = matchesViewport(minimum) ? minimum : null;
+    let tracksViewportHeight = false;
+    if (
+      lastReportedHeight > 0 &&
+      initialMinimum != null &&
+      root === previous?.root &&
+      previous.initialMinimum != null
+    ) {
+      const gutter = 2 * parseFloat(bodyStyle.getPropertyValue("--visualize-paint-gutter"));
+      // Keep the same minimum while waiting for the host to resize the frame
+      // and when it acknowledges our height with the paint gutter added.
+      if (gutter > 0 && (
+        viewportHeight === previous.viewportHeight ||
+        matchesViewport(Math.ceil(lastReportedHeight) + gutter)
+      )) {
+        initialMinimum = previous.initialMinimum;
+        // A width-based minimum can match the viewport during a drag. Wait
+        // for a height-only resize before treating the match as feedback.
+        tracksViewportHeight = previous.tracksViewportHeight ||
+          (sameWidth && !matchesViewport(previous.viewportHeight));
+      }
+    }
+    previousMeasurement = {
+      contentHeight, contentWidth, viewportHeight, viewportWidth, root, initialMinimum, tracksViewportHeight,
+    };
+
+    // Measure wrapped content at the original minimum. Also correct any
+    // growth reported before the first height-only resize.
+    if (tracksViewportHeight && !matchesViewport(initialMinimum) && matchesViewport(contentHeight)) {
+      if (sameWidth && (previous.tracksViewportHeight || previous.viewportHeight === initialMinimum)) {
+        return;
+      }
+      const authoredStyle = root.getAttribute("style");
+      root.setAttribute("style", root.style.cssText + " min-height: " + initialMinimum + "px !important;");
+      try {
+        contentHeight = measureChild(root, bodyStyle);
+      } finally {
+        if (authoredStyle == null) {
+          root.removeAttribute("style");
+        } else {
+          root.setAttribute("style", authoredStyle);
+        }
+      }
+      if (sameWidth && contentHeight === lastReportedHeight) {
+        return;
+      }
+    } else if (
+      sameWidth &&
+      contentHeight - previous.contentHeight === viewportHeight - previous.viewportHeight
+    ) {
+      return;
+    }
+    lastReportedHeight = contentHeight;
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_height__",
+        { height: contentHeight, width: contentWidth },
+      )
+      .catch(() => {});
+  };
+  const scheduleHeightReport = () => {
+    if (heightReportTimer != null) {
+      return;
+    }
+    // Offscreen frames can suspend animation callbacks while their content loads.
+    heightReportTimer = globalThis.setTimeout(() => {
+      heightReportTimer = null;
+      reportHeight();
+    }, 0);
+  };
+
+  const resizeObserver = new ResizeObserver(scheduleHeightReport);
+  const observeBodyChildren = () => {
+    for (const element of document.body.children) {
+      resizeObserver.observe(element);
+    }
+  };
+  resizeObserver.observe(document.body);
+  observeBodyChildren();
+  new MutationObserver(() => {
+    observeBodyChildren();
+    scheduleHeightReport();
+  }).observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class", "height", "width"],
+  });
+  globalThis.addEventListener("resize", scheduleHeightReport);
+  if (waitingForStreamRoot != null) {
+    globalThis.addEventListener("openai:set_globals", onStreamGlobals);
+    if (globalThis.openai?.__appBlockStream?.isFinal) {
+      markStreamReady();
+    }
+  }
+  reportHeight();
+})();
+</script>
+<style>
+html, body {
+  scrollbar-width: none !important;
+  
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none !important; }
+</style>
+
+</body></html>
